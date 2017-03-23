@@ -1,0 +1,51 @@
+// manifest
+@import 'partials/setup';
+@import 'partials/variables';
+@import 'partials/mixins';
+
+
+// **
+// Elements
+// **
+
+body {
+	font-size: 62.5%;
+	font-family: $fontPrimary;
+	background-color: thistle;
+}
+
+header {
+	width: 80%;
+	height: 80vh;
+	
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+h1 {
+	font-size: 3rem;
+}
+
+footer {
+	display: flex;
+}
+
+
+// **
+// Classes
+// **
+
+.wrapper {
+	width: 80%
+}
+
+.navItems {
+	display: flex;
+}
+
+.headerText {
+	display: flex;
+}

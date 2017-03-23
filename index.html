@@ -1,10 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 	<meta charset="UTF-8">
-	<title>React Boiler</title>
+	<title>Jessica Del Grande | Front-End Developer | Toronto</title>
+	<link rel="stylesheet" href="styles/style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0" user-scalable="no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
+
 <body>
+
+	<div class="wrapper">
+
+		<header>
+			<nav>
+				<img src="" alt="">
+				<!-- insert span with flex-grow if spacing is needed -->
+				<div class="navItems">
+					<div>
+						<p>Portfolio</p>
+					</div>
+					<div>
+						<p>About Me</p>
+					</div>
+					<div>
+						<p>Contact</p>
+					</div>
+				</div>
+			</nav>
+			<div class="headerText">
+				<h1>Jessica Del Grande</h1>
+				<p>Front-End Developer</p>
+				<button>Get in Touch</button>
+			</div>
+		</header>
+
+		<main>
+			<section class="portfolio">
+				<h2>Portfolio</h2>
+				<!-- roll up all descriptions on mobile (JS?) -->
+				<!-- show only image, project name, skill buttons, links, and then "click for description" or something to unroll -->
+				<div class="portfolioSection__imageLeft">
+					<div class="portfolioSection__imageContainer">
+						<!-- div to hold background image of project -->
+						<!-- overlay on hover? -->
+					</div>
+					<div class="portfolioSection__Description">
+						<p>Ask The Tarot</p>
+						<p>detailed description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis libero nemo, facere dolorum dignissimos ad velit harum. Enim, natus, ea?</p>
+						<p>detailed description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis libero nemo, facere dolorum dignissimos ad velit harum. Enim, natus, ea?</p>
+					</div>
+				</div>
+				<div class="portfolioSection__imageRight">
+					<div class="portfolioSection__imageContainer">
+						
+					</div>
+					<div class="portfolioDescription">
+						<p>Where Should I Surf?</p>
+						<p>detailed description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis libero nemo, facere dolorum dignissimos ad velit harum. Enim, natus, ea?</p>
+						<p>detailed description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis libero nemo, facere dolorum dignissimos ad velit harum. Enim, natus, ea?</p>
+					</div>
+				</div>
+				<div class="portfolioSection__imageLeft">
+					<div class="portfolioSection__imageContainer">
+						
+					</div>
+					<div class="portfolioDescription">
+						<p>What Should I Bring?</p>
+						<p>detailed description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis libero nemo, facere dolorum dignissimos ad velit harum. Enim, natus, ea?</p>
+						<p>detailed description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis libero nemo, facere dolorum dignissimos ad velit harum. Enim, natus, ea?</p>
+					</div>
+				</div>
+				<div class="portfolioSection__imageRight">
+					<div class="portfolioSection__imageContainer">
+						
+					</div>
+					<div class="portfolioDescription">
+						<p>Anatomy Quiz</p>
+						<p>detailed description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis libero nemo, facere dolorum dignissimos ad velit harum. Enim, natus, ea?</p>
+						<p>detailed description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis libero nemo, facere dolorum dignissimos ad velit harum. Enim, natus, ea?</p>
+					</div>
+				</div>
+				<div class="portfolioSection__imageLeft">
+					<div class="portfolioSection__imageContainer">
+						
+					</div>
+					<div class="portfolioDescription">
+						<p>Bakery PSD Conversion</p>
+						<p>detailed description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis libero nemo, facere dolorum dignissimos ad velit harum. Enim, natus, ea?</p>
+						<p>detailed description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis libero nemo, facere dolorum dignissimos ad velit harum. Enim, natus, ea?</p>
+					</div>
+				</div>
+			</section><!-- end .portfolio -->
+
+			<section class="aboutMe">
+				<h2>About Me</h2>
+				<div class="aboutMe__content">
+					<img src="" alt="">
+					<p>Jessica Del Grande</p>
+					<p>Front-End Developer</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam quis reiciendis cupiditate voluptatem numquam porro suscipit expedita facere itaque ab?</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, similique neque explicabo cumque distinctio recusandae incidunt, tenetur odio iste sapiente.</p>
+				</div>
+			</section><!-- end .aboutMe -->
+
+			<footer>
+				<h2>Get In Touch</h2>
+				<div class="social">
+					<div>
+						<i class="fa fa-envelope" aria-hidden="true"></i>
+						<p>email</p>
+					</div>
+					<div>
+						<i class="fa fa-twitter" aria-hidden="true"></i>
+						<p>Twitter</p>
+					</div>
+					<div>
+						<i class="fa fa-linkedin" aria-hidden="true"></i>
+						<p>LinkedIn</p>
+					</div>
+					<div>
+						<i class="fa fa-medium" aria-hidden="true"></i>
+						<p>Medium</p>
+					</div>
+					<div>
+						<i class="fa fa-github-alt" aria-hidden="true"></i>
+						<p>GitHub</p>
+					</div>
+				</div>
+				<form action="">
+					<label for="name">Name</label>
+					<input type="text">
+					<label for="email">Email</label>
+					<input type="email">
+					<label for="yourMessage">Your Message</label>
+					<button type="submit">Submit</button>
+				</form>
+				<!-- hide form on mobile -->
+				<p>&copy; 2017 Jessica Del Grande</p>
+			</footer>
+
+		</main>
+
+
+
+	</div><!-- end .wrapper -->
+
+
+
+
 	
 	<div id="app"></div>
 	<script src="public/app.js"></script>
