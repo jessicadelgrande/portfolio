@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="/public/styles/style.css">
 	<meta charset="utf-8">
 	<meta name="viewport" content="initial-scale=1.0" user-scalable="no">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,500" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
@@ -16,95 +17,127 @@
 
 	<div class="wrapper">
 
-		<header>
-			<nav>
+		<nav>
+			<div class="navImage">
 				<img src="" alt="">
-				<!-- insert span with flex-grow if spacing is needed -->
-				<div class="navItems">
-					<div>
-						<p>Portfolio</p>
-					</div>
-					<div>
-						<p>About Me</p>
-					</div>
-					<div>
-						<p>Contact</p>
+			</div>
+			<!-- insert span with flex-grow if spacing is needed -->
+			<div class="navItems">
+				<div>
+					<p>Portfolio</p>
+				</div>
+				<div>
+					<p>About Me</p>
+				</div>
+				<div>
+					<p>Contact</p>
+				</div>
+			</div>
+		</nav>
+
+		<header>
+			<div class="header__image">
+				<div class="overlay">
+					<div class="headerText">
+						<div>
+							<h1>Jessica Del Grande</h1>
+						</div>
+						<div class="lineSegment"></div>
+						<div>
+							<p class="headerText__subhead">Front-End Developer</p>
+						</div>
+						<!-- <button>Get in Touch</button> -->
 					</div>
 				</div>
-			</nav>
-			<div class="headerText">
-				<h1>Jessica Del Grande</h1>
-				<p>Front-End Developer</p>
-				<button>Get in Touch</button>
 			</div>
 		</header>
 
 		<main>
 			<section class="portfolio">
-				<h2>Portfolio</h2>
+				<p class ="sectionName">Portfolio</p>
 				<!-- roll up all descriptions on mobile (JS?) -->
 				<!-- show only image, project name, skill buttons, links, and then "click for description" or something to unroll -->
-				<div class="portfolioSection__imageLeft">
+				<div class="portfolioSection ps__imageLeft">
 					<div class="portfolioSection__imageContainer">
 						<!-- div to hold background image of project -->
 						<!-- overlay on hover? -->
+						<p>image goes here</p>
 					</div>
-					<div class="portfolioSection__Description">
-						<p>Ask The Tarot</p>
-						<p>detailed description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis libero nemo, facere dolorum dignissimos ad velit harum. Enim, natus, ea?</p>
-						<p>detailed description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis libero nemo, facere dolorum dignissimos ad velit harum. Enim, natus, ea?</p>
-					</div>
-				</div>
-				<div class="portfolioSection__imageRight">
-					<div class="portfolioSection__imageContainer">
-						
-					</div>
-					<div class="portfolioDescription">
-						<p>Where Should I Surf?</p>
-						<p>detailed description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis libero nemo, facere dolorum dignissimos ad velit harum. Enim, natus, ea?</p>
-						<p>detailed description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis libero nemo, facere dolorum dignissimos ad velit harum. Enim, natus, ea?</p>
+					<div class="portfolioSection__description">
+						<p class="portfolioSection__projectName">Ask The <br><span>Tarot</span></p>
+						<div class="lineSegment"></div>
+						<div class="portfolioSection__text">
+							<p>detailed description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis libero nemo, facere dolorum dignissimos ad velit harum. Enim, natus, ea?</p>
+							<p>detailed description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis libero nemo, facere dolorum dignissimos ad velit harum. Enim, natus, ea?</p>
+						</div>
 					</div>
 				</div>
-				<div class="portfolioSection__imageLeft">
-					<div class="portfolioSection__imageContainer">
-						
+				<div class="portfolioSection ps__imageRight">
+					<div class="portfolioSection__description">
+						<p class="portfolioSection__projectName">Where Should I <br><span>Surf?</span></p>
+						<div class="lineSegment"></div>
+						<div class="portfolioSection__text">
+							<p>detailed description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis libero nemo, facere dolorum dignissimos ad velit harum. Enim, natus, ea?</p>
+							<p>detailed description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis libero nemo, facere dolorum dignissimos ad velit harum. Enim, natus, ea?</p>
+						</div>
 					</div>
-					<div class="portfolioDescription">
-						<p>What Should I Bring?</p>
-						<p>detailed description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis libero nemo, facere dolorum dignissimos ad velit harum. Enim, natus, ea?</p>
-						<p>detailed description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis libero nemo, facere dolorum dignissimos ad velit harum. Enim, natus, ea?</p>
+					<div class="portfolioSection__imageContainer">
+						<p>image goes here</p>
 					</div>
 				</div>
-				<div class="portfolioSection__imageRight">
+				<div class="portfolioSection ps__imageLeft">
 					<div class="portfolioSection__imageContainer">
-						
+						<p>image goes here</p>
 					</div>
-					<div class="portfolioDescription">
-						<p>Anatomy Quiz</p>
-						<p>detailed description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis libero nemo, facere dolorum dignissimos ad velit harum. Enim, natus, ea?</p>
-						<p>detailed description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis libero nemo, facere dolorum dignissimos ad velit harum. Enim, natus, ea?</p>
+					<div class="portfolioSection__description">
+						<p class="portfolioSection__projectName">What Should I <br><span>Bring?</span></p>
+						<div class="lineSegment"></div>
+						<div class="portfolioSection__text">
+							<p>detailed description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis libero nemo, facere dolorum dignissimos ad velit harum. Enim, natus, ea?</p>
+							<p>detailed description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis libero nemo, facere dolorum dignissimos ad velit harum. Enim, natus, ea?</p>
+						</div>
 					</div>
 				</div>
-				<div class="portfolioSection__imageLeft">
-					<div class="portfolioSection__imageContainer">
-						
+				<div class="portfolioSection ps__imageRight">
+					<div class="portfolioSection__description">
+						<p class="portfolioSection__projectName"><span>Anatomy</span><br> Quiz</p>
+						<div class="lineSegment"></div>
+						<div class="portfolioSection__text">
+							<p>detailed description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis libero nemo, facere dolorum dignissimos ad velit harum. Enim, natus, ea?</p>
+							<p>detailed description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis libero nemo, facere dolorum dignissimos ad velit harum. Enim, natus, ea?</p>
+						</div>
 					</div>
-					<div class="portfolioDescription">
-						<p>Bakery PSD Conversion</p>
-						<p>detailed description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis libero nemo, facere dolorum dignissimos ad velit harum. Enim, natus, ea?</p>
-						<p>detailed description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis libero nemo, facere dolorum dignissimos ad velit harum. Enim, natus, ea?</p>
+					<div class="portfolioSection__imageContainer">
+						<p>image goes here</p>
+					</div>
+				</div>
+				<div class="portfolioSection ps__imageLeft">
+					<div class="portfolioSection__imageContainer">
+						<p>image goes here</p>
+					</div>
+					<div class="portfolioSection__description">
+						<p class="portfolioSection__projectName"><span>Bakery</span><br> PSD Conversion</p>
+						<div class="lineSegment"></div>
+						<div class="portfolioSection__text">
+							<p>detailed description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis libero nemo, facere dolorum dignissimos ad velit harum. Enim, natus, ea?</p>
+							<p>detailed description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis libero nemo, facere dolorum dignissimos ad velit harum. Enim, natus, ea?</p>
+						</div>
 					</div>
 				</div>
 			</section><!-- end .portfolio -->
 
 			<section class="aboutMe">
-				<h2>About Me</h2>
+				<p class="sectionName">About Me</p>
 				<div class="aboutMe__content">
-					<img src="" alt="">
-					<p>Jessica Del Grande</p>
-					<p>Front-End Developer</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam quis reiciendis cupiditate voluptatem numquam porro suscipit expedita facere itaque ab?</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, similique neque explicabo cumque distinctio recusandae incidunt, tenetur odio iste sapiente.</p>
+					<div class="aboutMe__image">
+						<img src="" alt="">
+					</div>
+					<div class="aboutMe__text">
+						<p>Jessica Del Grande</p>
+						<p>Front-End Developer</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam quis reiciendis cupiditate voluptatem numquam porro suscipit expedita facere itaque ab?</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, similique neque explicabo cumque distinctio recusandae incidunt, tenetur odio iste sapiente.</p>
+					</div>
 				</div>
 			</section><!-- end .aboutMe -->
 

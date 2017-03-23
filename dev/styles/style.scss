@@ -11,22 +11,28 @@
 body {
 	font-size: 62.5%;
 	font-family: $fontPrimary;
-	background-color: thistle;
-}
-
-header {
-	width: 80%;
-	height: 80vh;
-	
+	display: flex;
+	justify-content: center;
 }
 
 nav {
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-end;
+	text-transform: lowercase;
+	margin: 20px 0;
 }
 
-h1 {
-	font-size: 3rem;
+header {
+	width: 80vw;
+	height: 75vh;
+	background-image: url("../../assets/richard-tilney-bassett-182708_bg.jpg");
+	background-position: right top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
 }
 
 footer {
@@ -42,10 +48,114 @@ footer {
 	width: 80%
 }
 
+.navImage {
+	width: 50%;
+}
+
 .navItems {
 	display: flex;
+	font-size: 1rem;
+	font-weight: 200;
+	color: $colorSecondary;
+	width: 30%;
+	justify-content: space-between;
+}
+
+.overlay {
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: rgba(239,209,198, 0.5);
+	height: 75vh;
+	width: 80vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .headerText {
 	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.headerText h1 {
+	text-align: center;
+	font-size: 3.6rem;
+	font-weight: 500;
+	margin: 0;
+}
+
+.lineSegment {
+	width: 50px;
+	border-bottom: 2px solid black;
+	margin: 15px 0;
+}
+
+.headerText__subhead {
+	font-size: 2.4rem;
+	font-weight: 200;
+	text-align: center;
+	text-transform: lowercase;
+	margin: 0;
+}
+
+.sectionName {
+	font-size: 5rem;
+	font-weight: 100;
+	text-align: center;
+	text-transform: lowercase;
+	margin: 70px 0;
+}
+
+.portfolioSection {
+	display: flex;
+	margin: 50px 0;
+}
+
+.portfolioSection__description {
+	width: 50%;
+	text-transform: lowercase;
+}
+
+.portfolioSection__imageContainer {
+	width: 50%;
+	background-color: $colorPrimary;
+}
+
+.ps__imageLeft .portfolioSection__imageContainer {
+	margin-right: 50px;
+}
+
+.ps__imageRight .portfolioSection__imageContainer {
+	margin-left: 50px;
+}
+
+.portfolioSection__projectName {
+	font-size: 1.8rem;
+	font-weight: 200;
+	margin: 0;
+	line-height: 1.8rem;
+}
+
+.portfolioSection__projectName span {
+	font-size: 2.4rem;
+	font-weight: 500;
+}
+
+.portfolioSection__text {
+	font-size: 0.8rem;
+	font-weight: 200;
+}
+
+.aboutMe__content {
+	display: flex;
+}
+
+.aboutMe__image {
+	width: 35%;
+}
+
+.aboutMe__text {
+	width: 65%;
 }
