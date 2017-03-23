@@ -131,10 +131,14 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 body {
   font-size: 62.5%;
   font-family: "Montserrat", sans-serif;
+  font-weight: 200;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center; }
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 100%; }
 
 nav {
   display: -ms-flexbox;
@@ -161,7 +165,16 @@ header {
 
 footer {
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
+form {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  width: 50%; }
 
 .wrapper {
   width: 80%; }
@@ -172,12 +185,14 @@ footer {
 .navItems {
   display: -ms-flexbox;
   display: flex;
-  font-size: 1rem;
-  font-weight: 200;
+  font-size: 0.8rem;
   color: slategray;
-  width: 30%;
+  width: 40%;
   -ms-flex-pack: justify;
       justify-content: space-between; }
+
+.navItems div {
+  margin: 0 10px; }
 
 .overlay {
   position: absolute;
@@ -214,13 +229,12 @@ footer {
 
 .headerText__subhead {
   font-size: 2.4rem;
-  font-weight: 200;
   text-align: center;
   text-transform: lowercase;
   margin: 0; }
 
 .sectionName {
-  font-size: 5rem;
+  font-size: 3.6rem;
   font-weight: 100;
   text-align: center;
   text-transform: lowercase;
@@ -229,7 +243,7 @@ footer {
 .portfolioSection {
   display: -ms-flexbox;
   display: flex;
-  margin: 50px 0; }
+  margin: 70px 0; }
 
 .portfolioSection__description {
   width: 50%;
@@ -247,7 +261,6 @@ footer {
 
 .portfolioSection__projectName {
   font-size: 1.8rem;
-  font-weight: 200;
   margin: 0;
   line-height: 1.8rem; }
 
@@ -256,15 +269,57 @@ footer {
   font-weight: 500; }
 
 .portfolioSection__text {
-  font-size: 0.8rem;
-  font-weight: 200; }
+  font-size: 0.8rem; }
+
+.aboutMe {
+  background-color: #efd1c6;
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
+
+.aboutMe__wrapper {
+  width: 80%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center; }
 
 .aboutMe__content {
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row; }
 
 .aboutMe__image {
-  width: 35%; }
+  background: thistle;
+  border-radius: 50%; }
+
+.aboutMe__name {
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 0; }
+
+.aboutMe__title {
+  font-size: 1.2rem;
+  margin: 0; }
 
 .aboutMe__text {
-  width: 65%; }
+  width: 65%;
+  font-size: 0.8rem; }
+
+.devIcons {
+  color: black;
+  font-size: 2rem;
+  letter-spacing: 0.6rem;
+  margin: 70px 0; }
+
+.getInTouch__columns {
+  display: -ms-flexbox;
+  display: flex; }
+
+.social {
+  width: 50%; }

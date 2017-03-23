@@ -10,6 +10,7 @@
 	<meta name="viewport" content="initial-scale=1.0" user-scalable="no">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,500" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/4f6a4b08efdad6bb29f9cc801f5c07e263b39907/devicon.min.css">
 
 </head>
 
@@ -125,24 +126,46 @@
 					</div>
 				</div>
 			</section><!-- end .portfolio -->
+		</main>
 
-			<section class="aboutMe">
-				<p class="sectionName">About Me</p>
-				<div class="aboutMe__content">
-					<div class="aboutMe__image">
-						<img src="" alt="">
-					</div>
-					<div class="aboutMe__text">
-						<p>Jessica Del Grande</p>
-						<p>Front-End Developer</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam quis reiciendis cupiditate voluptatem numquam porro suscipit expedita facere itaque ab?</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, similique neque explicabo cumque distinctio recusandae incidunt, tenetur odio iste sapiente.</p>
+	</div><!-- end .wrapper -->
+
+	<section class="aboutMe">
+		<div class="aboutMe__wrapper">
+			<p class="sectionName">About Me</p>
+			<div class="aboutMe__content">
+				<div class="">
+					<img class="aboutMe__image" src="" alt="">
+					<div class="">
+						<p class="aboutMe__name">Jessica Del Grande</p>
+						<p class="aboutMe__title">Front-End Developer</p>
 					</div>
 				</div>
-			</section><!-- end .aboutMe -->
+				<div class="aboutMe__text">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam quis reiciendis cupiditate voluptatem numquam porro suscipit expedita facere itaque ab?</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, similique neque explicabo cumque distinctio recusandae incidunt, tenetur odio iste sapiente.</p>
+				</div>
+			</div><!-- end .aboutMe__content -->
+			<div class="devIcons">
+				<i class="devicon-html5-plain"></i>
+				<i class="devicon-css3-plain"></i>
+				<i class="devicon-sass-original"></i>
+				<i class="devicon-javascript-plain"></i>
+				<i class="devicon-jquery-plain"></i>
+				<i class="devicon-nodejs-plain"></i>
+				<i class="devicon-react-original"></i>
+				<i class="devicon-wordpress-plain"></i>
+				<i class="devicon-git-plain"></i>
+				<i class="devicon-github-plain"></i>
+				<i class="devicon-gulp-plain"></i>
+			</div>
+		</div><!-- end .aboutMe__wrapper -->
+	</section><!-- end .aboutMe -->
 
-			<footer>
-				<h2>Get In Touch</h2>
+	<div class="wrapper">
+		<footer>
+			<h2 class="sectionName">Get In Touch</h2>
+			<div class="getInTouch__columns">
 				<div class="social">
 					<div>
 						<i class="fa fa-envelope" aria-hidden="true"></i>
@@ -171,20 +194,15 @@
 					<label for="email">Email</label>
 					<input type="email">
 					<label for="yourMessage">Your Message</label>
+					<input type="textarea">
 					<button type="submit">Submit</button>
 				</form>
-				<!-- hide form on mobile -->
-				<p>&copy; 2017 Jessica Del Grande</p>
-			</footer>
+			</div>
 
-		</main>
-
-
-
-	</div><!-- end .wrapper -->
-
-
-
+			<!-- hide form on mobile -->
+			<p>&copy; 2017 Jessica Del Grande</p>
+		</footer>
+	</div>
 
 	
 	<div id="app"></div>

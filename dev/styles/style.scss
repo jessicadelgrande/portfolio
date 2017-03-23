@@ -11,8 +11,11 @@
 body {
 	font-size: 62.5%;
 	font-family: $fontPrimary;
+	font-weight: 200;
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
 }
 
 nav {
@@ -37,6 +40,13 @@ header {
 
 footer {
 	display: flex;
+	flex-direction: column;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
 }
 
 
@@ -54,11 +64,15 @@ footer {
 
 .navItems {
 	display: flex;
-	font-size: 1rem;
-	font-weight: 200;
+	font-size: 0.8rem;
+	// font-weight: 200;
 	color: $colorSecondary;
-	width: 30%;
+	width: 40%;
 	justify-content: space-between;
+}
+
+.navItems div {
+	margin: 0 10px;
 }
 
 .overlay {
@@ -94,14 +108,14 @@ footer {
 
 .headerText__subhead {
 	font-size: 2.4rem;
-	font-weight: 200;
+	// font-weight: 200;
 	text-align: center;
 	text-transform: lowercase;
 	margin: 0;
 }
 
 .sectionName {
-	font-size: 5rem;
+	font-size: 3.6rem;
 	font-weight: 100;
 	text-align: center;
 	text-transform: lowercase;
@@ -110,7 +124,7 @@ footer {
 
 .portfolioSection {
 	display: flex;
-	margin: 50px 0;
+	margin: 70px 0;
 }
 
 .portfolioSection__description {
@@ -133,7 +147,7 @@ footer {
 
 .portfolioSection__projectName {
 	font-size: 1.8rem;
-	font-weight: 200;
+	// font-weight: 200;
 	margin: 0;
 	line-height: 1.8rem;
 }
@@ -145,17 +159,62 @@ footer {
 
 .portfolioSection__text {
 	font-size: 0.8rem;
-	font-weight: 200;
+	// font-weight: 200;
+}
+
+.aboutMe {
+	background-color: $colorPrimary;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.aboutMe__wrapper {
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .aboutMe__content {
 	display: flex;
+	flex-direction: row;
 }
 
 .aboutMe__image {
-	width: 35%;
+	// width: 35%;
+	background: thistle;
+	border-radius: 50%;
+}
+
+.aboutMe__name {
+	font-size: 2rem;
+	font-weight: 500;
+	margin: 0;
+}
+
+.aboutMe__title {
+	font-size: 1.2rem;
+	margin: 0;
 }
 
 .aboutMe__text {
 	width: 65%;
+	font-size: 0.8rem;
+	// font-weight: 200;
+}
+
+.devIcons {
+	color: black;
+	font-size: 2rem;
+	letter-spacing: 0.6rem;
+	margin: 70px 0;
+}
+
+.getInTouch__columns {
+	display: flex;
+}
+
+.social {
+	width: 50%;
 }
