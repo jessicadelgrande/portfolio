@@ -33,7 +33,7 @@
 
 @mixin portfolioImage {
 	background-position: center;
-	background-size: 100%;
+	background-size: contain;
 	background-repeat: no-repeat;
 }
 

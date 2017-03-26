@@ -180,14 +180,12 @@ form {
 .portfolioSection {
 	display: flex;
 	padding: 70px;
-	// background-color: rgba(239,209,198, 0.3);
 }
 
 .portfolioSection__description {
 	width: 50%;
 	// margin: 20px;
 	padding: 30px;
-	// border: 1px solid $colorPrimary;
 }
 
 .portfolioSection__lineSegment {
@@ -201,7 +199,9 @@ form {
 }
 
 .portfolioSection.ps__imageLeft {
-	background-color: rgba(239,209,198, 0.3);
+	background-color: rgba(239,209,198, 0.2);
+	display: flex;
+	justify-content: center;
 }
 
 .ps__imageLeft .portfolioSection__imageContainer {
@@ -209,6 +209,16 @@ form {
 	padding: 70px;
 	margin-right: 50px;
 	@include portfolioImage;
+}
+
+.portfolioSection__innerWrapper {
+	width: 80%;
+	display: flex;
+}
+
+.portfolioSection.ps__imageRight {
+	display: flex;
+	justify-content: center;
 }
 
 .ps__imageRight .portfolioSection__imageContainer {

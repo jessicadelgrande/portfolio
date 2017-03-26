@@ -321,7 +321,11 @@ form {
   width: 50%; }
 
 .portfolioSection.ps__imageLeft {
-  background-color: rgba(239, 209, 198, 0.3); }
+  background-color: rgba(239, 209, 198, 0.2);
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
 
 .ps__imageLeft .portfolioSection__imageContainer {
   display: -ms-flexbox;
@@ -329,8 +333,19 @@ form {
   padding: 70px;
   margin-right: 50px;
   background-position: center;
-  background-size: 100%;
+  background-size: contain;
   background-repeat: no-repeat; }
+
+.portfolioSection__innerWrapper {
+  width: 80%;
+  display: -ms-flexbox;
+  display: flex; }
+
+.portfolioSection.ps__imageRight {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
 
 .ps__imageRight .portfolioSection__imageContainer {
   display: -ms-flexbox;
@@ -338,7 +353,7 @@ form {
   padding: 70px;
   margin-left: 30px;
   background-position: center;
-  background-size: 100%;
+  background-size: contain;
   background-repeat: no-repeat; }
 
 .askTheTarot__image {
