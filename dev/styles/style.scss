@@ -25,6 +25,10 @@ nav {
 	margin: 20px 0;
 }
 
+a {
+	text-decoration: none;
+}
+
 header {
 	width: 80vw;
 	height: 75vh;
@@ -36,6 +40,11 @@ header {
 
 button {
 	@include buttonStyles;
+}
+
+main {
+	display: flex;
+	justify-content: center;
 }
 
 footer {
@@ -126,6 +135,7 @@ form {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	letter-spacing: 1px;
 }
 
 .header__text h1 {
@@ -138,14 +148,21 @@ form {
 .lineSegment {
 	width: 50px;
 	border-bottom: 2px solid black;
-	margin: 15px 0;
+	margin: 20px 0;
 }
 
 .header__text--subhead {
 	font-size: 2.4rem;
 	text-align: center;
 	text-transform: lowercase;
-	margin: 0;
+	margin: 0 0 50px 0;
+	letter-spacing: 1px;
+}
+
+.header__button {
+	color: white;
+	background-color: black;
+	text-decoration: none;
 }
 
 .sectionName {
@@ -162,45 +179,68 @@ form {
 
 .portfolioSection {
 	display: flex;
-	margin: 70px 0;
+	padding: 70px;
+	// background-color: rgba(239,209,198, 0.3);
 }
 
 .portfolioSection__description {
 	width: 50%;
+	// margin: 20px;
+	padding: 30px;
+	// border: 1px solid $colorPrimary;
+}
+
+.portfolioSection__lineSegment {
+	width: 50px;
+	border-bottom: 2px solid black;
+	margin: 20px 0 25px 0;
 }
 
 .portfolioSection__imageContainer {
 	width: 50%;
-	// width: 460px;
-	// height: 245px;
-	outline: 1px solid $colorPrimary;
-	outline-offset: 5px;
+}
+
+.portfolioSection.ps__imageLeft {
+	background-color: rgba(239,209,198, 0.3);
 }
 
 .ps__imageLeft .portfolioSection__imageContainer {
+	display: flex;
+	padding: 70px;
 	margin-right: 50px;
 	@include portfolioImage;
 }
 
 .ps__imageRight .portfolioSection__imageContainer {
-	margin-left: 50px;
+	display: flex;
+	padding: 70px;
+	margin-left: 30px;
 	@include portfolioImage;
 }
 
 .askTheTarot__image {
+	margin: 40px;
 	background-image: url("../../assets/askthetarot_screenshot.jpg");
 }
 
 .whereShouldISurf__image {
+	margin: 40px;
 	background-image: url("../../assets/whereshouldisurf_screenshot.jpg");
 }
 
 .whatShouldIBring__image {
+	margin: 40px;
 	background-image: url("../../assets/whatshouldibring_screenshot.jpg");
 }
 
 .anatomy__image {
+	margin: 40px;
 	background-image: url("../../assets/anatomy_screenshot.jpg"); 
+}
+
+.bakery__image {
+	margin: 40px;
+	background-image: url("../../assets/bakery_screenshot.jpg");
 }
 
 .portfolioSection__projectName {
@@ -216,11 +256,43 @@ form {
 }
 
 .portfolioSection__text {
+	margin-bottom: 20px;
 	@include bodyCopy;
 	span {
 		background-color: $colorPrimary;
-		padding: 2px;
-		margin: 2px;
+		padding: 6px;
+		margin: 4px;
+		line-height: 2rem;
+		white-space: nowrap;
+	}
+}
+
+.portfolioSection__buttons {
+	display: flex;
+	button {
+		margin: 10px 10px 0 0;
+		color: black;
+		background-color: white;
+		&:hover {
+			// background-color: $colorPrimary;
+			// transition: background-color 0.2s ease;
+		}
+		&:active {
+			color: black;
+		}
+	}
+}
+
+.portfolioSection__buttons a {
+	text-decoration: none;
+	&:link {
+		color: black;
+	}
+	&:visited {
+		color: $colorPrimary;
+	}
+	&:hover {
+
 	}
 }
 
@@ -240,7 +312,9 @@ form {
 
 .aboutMe__content {
 	display: flex;
+	// flex-direction: column;
 	flex-wrap: nowrap;
+	width: 100%;
 }
 
 .aboutMe__image {
@@ -268,42 +342,44 @@ form {
 	margin: 0 0 25px 0;
 }
 
-.aboutMe__text {
+.aboutMe__textContainer {
 	width: 65%;
-	margin-left: 60px;
+	margin-left: 70px;
 	@include bodyCopy;
 }
 
 .devicons {
 	display: flex;
+	flex-direction: column;
 	color: black;
 	margin: 70px 0;
 	flex-wrap: nowrap;
+	@include bp(lrg) {
+		flex-direction: column;
+		// @include bp(med) {
+		// 	flex-wrap: wrap;
+		// }
+	}
 }
 
 .devicon__group--six {
 	display: flex;
 	flex-wrap: nowrap;
-	@include bp(lrg) {
+	@include bp(med) {
 		flex-direction: column;
-		@include bp(med) {
-			flex-wrap: wrap;
-		}
 	}
 }
 
 .devicon__group--three {
 	display: flex;
 	flex-wrap: nowrap;
-	@include bp(sml) {
-		// flex-direction: column;
-	}
 }
 
 .devicons i {
 	padding: 15px;
 	width: 20%;
-	font-size: 2.2rem;
+	font-size: 3rem;
+	text-align: left;
 }
 
 .devicon__single {
@@ -311,7 +387,7 @@ form {
 }
 
 .devicon__single p {
-	font-size: 0.3rem;
+	font-size: 0.7rem;
 	text-align: center;
 }
 
@@ -325,6 +401,11 @@ form {
 
 .social__pairs {
 	display: flex;
+}
+
+.social__pairs i {
+	font-size: 2rem;
+	margin: 10px 0;
 }
 
 .copyright {
