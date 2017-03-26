@@ -4,6 +4,45 @@
 // skills buttons
 
 @mixin buttonStyles {
-	background-color: black;
+	background-color: white;
 	font-size: 1.8rem;
+	-webkit-border: none;
+	outline: none;
+	border-radius: none;
+	border: 1px solid black;
+}
+
+@mixin bodyCopy {
+	font-family: $fontPrimary;
+	font-size: 0.8rem;
+	line-height: 1.2rem;
+	letter-spacing: 0.1rem;
+}
+
+@mixin portfolioImage {
+	background-position: center;
+	background-size: 75%;
+	background-repeat: no-repeat;
+}
+
+@mixin bp($size) {
+ 
+	@if $size == 'lrg' {
+		@media (max-width: 960px) { 
+			@content; 
+		}
+	}
+
+	@if $size == 'med' {
+		@media (max-width: 768px) { 
+			@content; 
+		}
+	}
+
+	@if $size == 'sml' {
+		@media (max-width: 615px) { 
+			@content; 
+		}
+	}
+
 }

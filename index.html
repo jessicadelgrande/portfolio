@@ -18,36 +18,32 @@
 
 	<div class="wrapper">
 
-		<nav>
-			<div class="navImage">
-				<img src="" alt="">
+		<nav class="navItems">
+			<div>
+				<p class="navItems__item"><a href="#">Portfolio</a></p>
 			</div>
-			<!-- insert span with flex-grow if spacing is needed -->
-			<div class="navItems">
-				<div>
-					<p>Portfolio</p>
-				</div>
-				<div>
-					<p>About Me</p>
-				</div>
-				<div>
-					<p>Contact</p>
-				</div>
+			<div>
+				<p class="navItems__item"><a href="#">About Me</a></p>
+			</div>
+			<div>
+				<p class="navItems__item"><a href="#">Contact</a></p>
 			</div>
 		</nav>
 
 		<header>
-			<div class="header__image">
-				<div class="overlay">
-					<div class="headerText">
-						<div>
-							<h1>Jessica Del Grande</h1>
+			<div class="header__container">
+				<div class="header__image">
+					<div class="overlay">
+						<div class="header__text">
+							<div>
+								<h1>Jessica Del Grande</h1>
+							</div>
+							<div class="lineSegment"></div>
+							<div>
+								<p class="header__text--subhead">Front-End Developer</p>
+							</div>
+							<!-- <button>Get in Touch</button> -->
 						</div>
-						<div class="lineSegment"></div>
-						<div>
-							<p class="headerText__subhead">Front-End Developer</p>
-						</div>
-						<!-- <button>Get in Touch</button> -->
 					</div>
 				</div>
 			</div>
@@ -55,61 +51,58 @@
 
 		<main>
 			<section class="portfolio">
-				<p class ="sectionName">Portfolio</p>
+				<p class ="sectionName">portfolio</p>
 				<!-- roll up all descriptions on mobile (JS?) -->
 				<!-- show only image, project name, skill buttons, links, and then "click for description" or something to unroll -->
 				<div class="portfolioSection ps__imageLeft">
-					<div class="portfolioSection__imageContainer">
-						<!-- div to hold background image of project -->
-						<!-- overlay on hover? -->
-						<p>image goes here</p>
+					<div class="portfolioSection__imageContainer askTheTarot__image">
 					</div>
 					<div class="portfolioSection__description">
-						<p class="portfolioSection__projectName">Ask The <br><span>Tarot</span></p>
+						<p class="portfolioSection__projectName">ask the <br><span>tarot</span></p>
 						<div class="lineSegment"></div>
 						<div class="portfolioSection__text">
 							<p>detailed description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis libero nemo, facere dolorum dignissimos ad velit harum. Enim, natus, ea?</p>
 							<p>detailed description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis libero nemo, facere dolorum dignissimos ad velit harum. Enim, natus, ea?</p>
+							<p><span>REACT</span> <span>FIREBASE</span> <span>CSS3</span></p>
 						</div>
 					</div>
 				</div>
 				<div class="portfolioSection ps__imageRight">
 					<div class="portfolioSection__description">
-						<p class="portfolioSection__projectName">Where Should I <br><span>Surf?</span></p>
+						<p class="portfolioSection__projectName">where should i <br><span>surf?</span></p>
 						<div class="lineSegment"></div>
 						<div class="portfolioSection__text">
 							<p>detailed description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis libero nemo, facere dolorum dignissimos ad velit harum. Enim, natus, ea?</p>
 							<p>detailed description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis libero nemo, facere dolorum dignissimos ad velit harum. Enim, natus, ea?</p>
 						</div>
 					</div>
-					<div class="portfolioSection__imageContainer">
-						<p>image goes here</p>
+					<div class="portfolioSection__imageContainer whereShouldISurf__image">
 					</div>
 				</div>
 				<div class="portfolioSection ps__imageLeft">
-					<div class="portfolioSection__imageContainer">
-						<p>image goes here</p>
+					<div class="portfolioSection__imageContainer whatShouldIBring__image">
 					</div>
 					<div class="portfolioSection__description">
-						<p class="portfolioSection__projectName">What Should I <br><span>Bring?</span></p>
+						<p class="portfolioSection__projectName">what should i <br><span>bring?</span></p>
 						<div class="lineSegment"></div>
 						<div class="portfolioSection__text">
-							<p>detailed description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis libero nemo, facere dolorum dignissimos ad velit harum. Enim, natus, ea?</p>
+							<p>Interactive site that pulls from the LCBO API and Google Maps API to provide gift suggestions based on user input.</p>
+							<p>HTML5, Sass, JavaScript, jQuery, Underscore, API</p>
 							<p>detailed description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis libero nemo, facere dolorum dignissimos ad velit harum. Enim, natus, ea?</p>
 						</div>
 					</div>
 				</div>
 				<div class="portfolioSection ps__imageRight">
 					<div class="portfolioSection__description">
-						<p class="portfolioSection__projectName"><span>Anatomy</span><br> Quiz</p>
+						<p class="portfolioSection__projectName"><span>anatomy</span><br> quiz</p>
 						<div class="lineSegment"></div>
 						<div class="portfolioSection__text">
+							<p>JavaScript, SVG</p>
 							<p>detailed description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis libero nemo, facere dolorum dignissimos ad velit harum. Enim, natus, ea?</p>
 							<p>detailed description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis libero nemo, facere dolorum dignissimos ad velit harum. Enim, natus, ea?</p>
 						</div>
 					</div>
-					<div class="portfolioSection__imageContainer">
-						<p>image goes here</p>
+					<div class="portfolioSection__imageContainer anatomy__image">
 					</div>
 				</div>
 				<div class="portfolioSection ps__imageLeft">
@@ -135,57 +128,108 @@
 			<p class="sectionName">About Me</p>
 			<div class="aboutMe__content">
 				<div class="">
-					<img class="aboutMe__image" src="" alt="">
-					<div class="">
-						<p class="aboutMe__name">Jessica Del Grande</p>
-						<p class="aboutMe__title">Front-End Developer</p>
-					</div>
+					<img class="aboutMe__image" src="assets/JDGportrait_laughing_square.jpg" alt="professional photo of Jessica Del Grande laughing">
 				</div>
 				<div class="aboutMe__text">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam quis reiciendis cupiditate voluptatem numquam porro suscipit expedita facere itaque ab?</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, similique neque explicabo cumque distinctio recusandae incidunt, tenetur odio iste sapiente.</p>
+					<div class="">
+						<p class="aboutMe__name">Jessica Del Grande</p>
+						<div class="lineSegment"></div>
+						<p class="aboutMe__title">Front-End Developer</p>
+					</div>
+					<p>I'm a front-end developer with extensive experience managing data-driven direct and digital projects in organizations of all sizes, from startups to international corporations. I'm an excellent communicator, a fearless question asker, and a lifelong learner.</p>
+					<p>My background in data and analytics  I have an eye for layout and a passion for clean, modular design that flows seamlessly between screens of all sizes.</p>
 				</div>
 			</div><!-- end .aboutMe__content -->
-			<div class="devIcons">
-				<i class="devicon-html5-plain"></i>
-				<i class="devicon-css3-plain"></i>
-				<i class="devicon-sass-original"></i>
-				<i class="devicon-javascript-plain"></i>
-				<i class="devicon-jquery-plain"></i>
-				<i class="devicon-nodejs-plain"></i>
-				<i class="devicon-react-original"></i>
-				<i class="devicon-wordpress-plain"></i>
-				<i class="devicon-git-plain"></i>
-				<i class="devicon-github-plain"></i>
-				<i class="devicon-gulp-plain"></i>
-			</div>
+			<div class="devicons">
+				<div class="devicon__group--six">
+					<div class="devicon__group--three">
+						<div class="devicon__single">
+							<i class="devicon-html5-plain"></i>
+							<p>HTML5</p>
+						</div>
+						<div class="devicon__single">
+							<i class="devicon-css3-plain"></i>
+							<p>CSS3</p>
+						</div>
+						<div class="devicon__single">
+							<i class="devicon-sass-original"></i>
+							<p>SASS</p>
+						</div>
+					</div>
+					<div class="devicon__group--three">
+						<div class="devicon__single">
+							<i class="devicon-javascript-plain"></i>
+							<p>JAVASCRIPT</p>
+						</div>
+						<div class="devicon__single">
+							<i class="devicon-jquery-plain"></i>
+							<p>JQUERY</p>
+						</div>
+						<div class="devicon__single">
+							<i class="devicon-nodejs-plain"></i>
+							<p>NODE.JS</p>
+						</div>
+					</div>
+				</div>
+				<div class="devicon__group--six">
+					<div class="devicon__group--three">
+						<div class="devicon__single">
+							<i class="devicon-react-original"></i>
+							<p>REACT</p>
+						</div>
+						<div class="devicon__single">
+							<i class="devicon-wordpress-plain"></i>
+							<p>WORDPRESS</p>
+						</div>
+						<div class="devicon__single">
+							<i class="devicon-git-plain"></i>
+							<p>GIT</p>
+						</div>
+					</div>
+					<div class="devicon__group--three">
+						<div class="devicon__single">
+							<i class="devicon-github-plain"></i>
+							<p>GITHUB</p>
+						</div>
+						<div class="devicon__single">
+							<i class="devicon-gulp-plain"></i>
+							<p>GULP</p>
+						</div>
+						<div class="devicon__single">
+							<i class="devicon-trello-plain"></i>
+							<p>TRELLO</p>
+						</div>
+					</div>
+				</div><!-- end .devicon__group--six -->
+			</div><!-- end .devicons -->
 		</div><!-- end .aboutMe__wrapper -->
 	</section><!-- end .aboutMe -->
 
-	<div class="wrapper">
-		<footer>
+
+	<footer>
+		<div class="wrapper">
 			<h2 class="sectionName">Get In Touch</h2>
 			<div class="getInTouch__columns">
 				<div class="social">
-					<div>
+					<div class="social__pairs">
 						<i class="fa fa-envelope" aria-hidden="true"></i>
 						<p>email</p>
 					</div>
-					<div>
+					<div class="social__pairs">
 						<i class="fa fa-twitter" aria-hidden="true"></i>
 						<p>Twitter</p>
 					</div>
-					<div>
-						<i class="fa fa-linkedin" aria-hidden="true"></i>
-						<p>LinkedIn</p>
-					</div>
-					<div>
+					<div class="social__pairs">
 						<i class="fa fa-medium" aria-hidden="true"></i>
 						<p>Medium</p>
 					</div>
-					<div>
+					<div class="social__pairs">
 						<i class="fa fa-github-alt" aria-hidden="true"></i>
 						<p>GitHub</p>
+					</div>
+					<div class="social__pairs">
+						<i class="fa fa-linkedin" aria-hidden="true"></i>
+						<p>LinkedIn</p>
 					</div>
 				</div>
 				<form action="">
@@ -198,10 +242,14 @@
 					<button type="submit">Submit</button>
 				</form>
 			</div>
-
 			<!-- hide form on mobile -->
-			<p>&copy; 2017 Jessica Del Grande</p>
-		</footer>
+		</div><!-- end .wrapper -->
+	</footer>
+
+	<div class="copyright">
+		<p>&copy; 
+		<script type="text/javascript">document.write(new Date().getFullYear());</script> 
+		Jessica Del Grande</p>
 	</div>
 
 	

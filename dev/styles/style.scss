@@ -32,15 +32,19 @@ header {
 	background-position: right top;
 	background-repeat: no-repeat;
 	background-size: cover;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: relative;
+}
+
+button {
+	@include buttonStyles;
 }
 
 footer {
 	display: flex;
 	flex-direction: column;
+	width: 100%;
+	align-items: center;
+	background-color: black;
+	color: white;
 }
 
 form {
@@ -55,24 +59,55 @@ form {
 // **
 
 .wrapper {
-	width: 80%
-}
-
-.navImage {
-	width: 50%;
+	width: 80%;
 }
 
 .navItems {
 	display: flex;
 	font-size: 0.8rem;
-	// font-weight: 200;
 	color: $colorSecondary;
-	width: 40%;
-	justify-content: space-between;
+	justify-content: flex-end;
 }
 
 .navItems div {
-	margin: 0 10px;
+	margin: 0 15px;
+	letter-spacing: 0.1rem;
+	&:last-of-type {
+		margin-right: 0;
+	}
+}
+
+.navItems__item a {
+	text-decoration: none;
+	padding: 2px 0;
+	color: black;
+	&:visited {
+		color: black;
+	}
+	&:hover {
+		border-bottom: 2px solid $colorPrimary;
+	}
+	&:focus {
+		outline: none;
+		border-bottom: 2px solid $colorPrimary;
+	}
+}
+
+.header__container {
+	background-color: white;
+	height: 95vh;
+	display: flex;
+	justify-content: center;
+}
+
+.header__image {
+	width: 80vw;
+	height: 75vh;
+	background-image: url("../../assets/richard-tilney-bassett-182708_bg.jpg");
+	background-position: right top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
 }
 
 .overlay {
@@ -87,13 +122,13 @@ form {
 	align-items: center;
 }
 
-.headerText {
+.header__text {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
-.headerText h1 {
+.header__text h1 {
 	text-align: center;
 	font-size: 3.6rem;
 	font-weight: 500;
@@ -106,9 +141,8 @@ form {
 	margin: 15px 0;
 }
 
-.headerText__subhead {
+.header__text--subhead {
 	font-size: 2.4rem;
-	// font-weight: 200;
 	text-align: center;
 	text-transform: lowercase;
 	margin: 0;
@@ -122,6 +156,10 @@ form {
 	margin: 70px 0;
 }
 
+.portfolio {
+	margin-top: 130px;
+}
+
 .portfolioSection {
 	display: flex;
 	margin: 70px 0;
@@ -129,37 +167,61 @@ form {
 
 .portfolioSection__description {
 	width: 50%;
-	text-transform: lowercase;
 }
 
 .portfolioSection__imageContainer {
 	width: 50%;
-	background-color: $colorPrimary;
+	// width: 460px;
+	// height: 245px;
+	outline: 1px solid $colorPrimary;
+	outline-offset: 5px;
 }
 
 .ps__imageLeft .portfolioSection__imageContainer {
 	margin-right: 50px;
+	@include portfolioImage;
 }
 
 .ps__imageRight .portfolioSection__imageContainer {
 	margin-left: 50px;
+	@include portfolioImage;
+}
+
+.askTheTarot__image {
+	background-image: url("../../assets/askthetarot_screenshot.jpg");
+}
+
+.whereShouldISurf__image {
+	background-image: url("../../assets/whereshouldisurf_screenshot.jpg");
+}
+
+.whatShouldIBring__image {
+	background-image: url("../../assets/whatshouldibring_screenshot.jpg");
+}
+
+.anatomy__image {
+	background-image: url("../../assets/anatomy_screenshot.jpg"); 
 }
 
 .portfolioSection__projectName {
 	font-size: 1.8rem;
-	// font-weight: 200;
 	margin: 0;
-	line-height: 1.8rem;
+	line-height: 2rem;
 }
 
 .portfolioSection__projectName span {
 	font-size: 2.4rem;
+	line-height: 2.6rem;
 	font-weight: 500;
 }
 
 .portfolioSection__text {
-	font-size: 0.8rem;
-	// font-weight: 200;
+	@include bodyCopy;
+	span {
+		background-color: $colorPrimary;
+		padding: 2px;
+		margin: 2px;
+	}
 }
 
 .aboutMe {
@@ -178,37 +240,79 @@ form {
 
 .aboutMe__content {
 	display: flex;
-	flex-direction: row;
+	flex-wrap: nowrap;
 }
 
 .aboutMe__image {
-	// width: 35%;
-	background: thistle;
+	width: 200px;
+	height: 200px;
+	background-image: url("../../assets/JDGportrait_laughing_square.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 	border-radius: 50%;
+	border: none;
+	outline: none;
 }
 
 .aboutMe__name {
 	font-size: 2rem;
+	line-height: 2.4rem;
 	font-weight: 500;
 	margin: 0;
 }
 
 .aboutMe__title {
 	font-size: 1.2rem;
-	margin: 0;
+	line-height: 1.4rem;
+	margin: 0 0 25px 0;
 }
 
 .aboutMe__text {
 	width: 65%;
-	font-size: 0.8rem;
-	// font-weight: 200;
+	margin-left: 60px;
+	@include bodyCopy;
 }
 
-.devIcons {
+.devicons {
+	display: flex;
 	color: black;
-	font-size: 2rem;
-	letter-spacing: 0.6rem;
 	margin: 70px 0;
+	flex-wrap: nowrap;
+}
+
+.devicon__group--six {
+	display: flex;
+	flex-wrap: nowrap;
+	@include bp(lrg) {
+		flex-direction: column;
+		@include bp(med) {
+			flex-wrap: wrap;
+		}
+	}
+}
+
+.devicon__group--three {
+	display: flex;
+	flex-wrap: nowrap;
+	@include bp(sml) {
+		// flex-direction: column;
+	}
+}
+
+.devicons i {
+	padding: 15px;
+	width: 20%;
+	font-size: 2.2rem;
+}
+
+.devicon__single {
+	margin: 5px;
+}
+
+.devicon__single p {
+	font-size: 0.3rem;
+	text-align: center;
 }
 
 .getInTouch__columns {
@@ -218,3 +322,16 @@ form {
 .social {
 	width: 50%;
 }
+
+.social__pairs {
+	display: flex;
+}
+
+.copyright {
+	background-color: white;
+	color: black;
+	font-weight: 500;
+	text-align: center;
+	margin: 30px 0;
+}
+

@@ -1,9 +1,13 @@
 $colorPrimary: rgb(239,209,198);
-// rgb(255,192,203)
-// pink
+// pink (Pantone Dogwood)
 // #ffc0cb
 $colorSecondary: rgb(112,128,144);
 // slategrey
 // #708090
 
 $fontPrimary: 'Montserrat', sans-serif;
+
+// media breakpoints
+$lrg: ( max: 960px );
+$med: ( max: 768px );
+$sml: ( max: 615px );
