@@ -37,13 +37,13 @@
 
 		<nav class="navItems">
 			<div>
-				<p class="navItems__item"><a href="#">Portfolio</a></p>
+				<p class="navItems__item"><a href="#portfolio">Portfolio</a></p>
 			</div>
 			<div>
-				<p class="navItems__item"><a href="#">About Me</a></p>
+				<p class="navItems__item"><a href="#aboutMe">About Me</a></p>
 			</div>
 			<div>
-				<p class="navItems__item"><a href="#">Contact</a></p>
+				<p class="navItems__item"><a href="#contact">Contact</a></p>
 			</div>
 		</nav>
 
@@ -52,14 +52,10 @@
 				<div class="header__image">
 					<div class="overlay">
 						<div class="header__text">
-							<div>
-								<h1>Jessica Del Grande</h1>
-							</div>
+							<h1>Jessica Del Grande</h1>
 							<div class="lineSegment"></div>
-							<div>
-								<p class="header__text--subhead">Front-End Developer</p>
-							</div>
-							<button class="header__button">get in touch</button>
+							<p class="header__text--subhead">Front-End Developer</p>
+							<a class="portfolioSection__link" href="#contact">get in touch</a>
 						</div>
 					</div>
 				</div>
@@ -70,7 +66,7 @@
 	<!-- <div class="portfolioWrapper"> -->
 		<main>
 			<section class="portfolio">
-				<p class ="sectionName">portfolio</p>
+				<p class ="sectionName" id="portfolio">portfolio</p>
 				<!-- roll up all descriptions on mobile (JS?) -->
 				<!-- show only image, project name, skill buttons, links, and then "click for description" or something to unroll -->
 				<div class="portfolioSection ps__imageLeft"><!-- contains background color -->
@@ -83,14 +79,8 @@
 							<div class="portfolioSection__text">
 								<p><span>REACT</span> <span>FIREBASE</span></p>
 								<p>detailed description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis libero nemo, facere dolorum dignissimos ad velit harum. Enim, natus, ea?</p>
-								<div class="portfolioSection__buttons">
-									<div>
-										<button><a href="http://jessicadelgrande.com/askthetarot/" target="_blank">view live site</a></button>
-									</div>
-									<div>
-										<button>view on github</button>
-									</div>
-								</div>
+								<a class="portfolioSection__link" href="http://jessicadelgrande.com/askthetarot/" target="_blank">view live site</a>
+								<a class="portfolioSection__link" href="#">view on github</a>
 							</div>
 						</div>
 					</div>
@@ -104,14 +94,8 @@
 							<div class="portfolioSection__text">
 								<p><span>JAVASCRIPT</span> <span>ES6</span> <span>JQUERY</span> <span>UNDERSCORE</span> <span>APIs</span></p>
 								<p>detailed description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis libero nemo, facere dolorum dignissimos ad velit harum. Enim, natus, ea?</p>
-								<div class="portfolioSection__buttons">
-									<div>
-										<button>view live site</button>
-									</div>
-									<div>
-										<button>view on github</button>
-									</div>
-								</div>
+								<a class="portfolioSection__link" href="#">view live site</a>
+								<a class="portfolioSection__link" href="#">view on github</a>
 							</div>
 						</div>
 						<div class="portfolioSection__imageContainer whereShouldISurf__image">
@@ -119,64 +103,50 @@
 					</div>
 				</div>
 				<div class="portfolioSection ps__imageLeft">
-					<div class="portfolioSection__imageContainer whatShouldIBring__image">
-					</div>
-					<div class="portfolioSection__description">
-						<p class="portfolioSection__projectName">what should i <br><span>bring?</span></p>
-						<div class="portfolioSection__lineSegment"></div>
-						<div class="portfolioSection__text">
-							<p><span>JAVASCRIPT</span> <span>ES6</span> <span>JQUERY</span> <span>GOOGLE API</span></p>
-							<p>Interactive site that pulls from the LCBO API and Google Maps API to provide gift suggestions based on user input.</p>
-							<div class="portfolioSection__buttons">
-								<div>
-									<button>view live site</button>
-								</div>
-								<div>
-									<button>view on github</button>
-								</div>
+					<div class="portfolioSection__innerWrapper"><!-- has L and R outer margins -->
+						<div class="portfolioSection__imageContainer whatShouldIBring__image">
+						</div>
+						<div class="portfolioSection__description">
+							<p class="portfolioSection__projectName">what should i <br><span>bring?</span></p>
+							<div class="portfolioSection__lineSegment"></div>
+							<div class="portfolioSection__text">
+								<p><span>JAVASCRIPT</span> <span>ES6</span> <span>JQUERY</span> <span>GOOGLE API</span></p>
+								<p>Interactive site that pulls from the LCBO API and Google Maps API to provide gift suggestions based on user input.</p>
+								<a class="portfolioSection__link" href="#">view live site</a>
+								<a class="portfolioSection__link" href="#">view on github</a>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="portfolioSection ps__imageRight">
-					<div class="portfolioSection__description">
-						<p class="portfolioSection__projectName">anatomy <br><span>quiz</span></p>
-						<div class="portfolioSection__lineSegment"></div>
-						<div class="portfolioSection__text">
-						<p><span>JAVASCRIPT</span> <span>JQUERY</span> <span>SVG</span></p>
-							<p>detailed description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis libero nemo, facere dolorum dignissimos ad velit harum. Enim, natus, ea?</p>
-							<div class="portfolioSection__buttons">
-								<div>
-									<button>view live site</button>
-								</div>
-								<div>
-									<button>view on github</button>
-								</div>
+					<div class="portfolioSection__innerWrapper"><!-- has L and R outer margins -->
+						<div class="portfolioSection__description">
+							<p class="portfolioSection__projectName">anatomy <br><span>quiz</span></p>
+							<div class="portfolioSection__lineSegment"></div>
+							<div class="portfolioSection__text">
+								<p><span>JAVASCRIPT</span> <span>JQUERY</span> <span>SVG</span></p>
+								<p>detailed description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis libero nemo, facere dolorum dignissimos ad velit harum. Enim, natus, ea?</p>
+								<a class="portfolioSection__link" href="#">view live site</a>
+								<a class="portfolioSection__link" href="#">view on github</a>
 							</div>
 						</div>
-					</div>
-					<div class="portfolioSection__imageContainer anatomy__image">
+						<div class="portfolioSection__imageContainer anatomy__image">
+						</div>
 					</div>
 				</div>
 				<div class="portfolioSection ps__imageLeft">
-					<div class="portfolioSection__imageContainer bakery__image">
-					</div>
-					<div class="portfolioSection__description">
-						<p class="portfolioSection__projectName">baker <br><span>and coffee</span></p>
-						<div class="portfolioSection__lineSegment"></div>
-						<div class="portfolioSection__text">
-						<p><span>HTML5</span> <span>CSS3</span> <span>FLOATS</span></p>
-							<p>detailed description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis libero nemo, facere dolorum dignissimos ad velit harum. Enim, natus, ea?</p>
-							<div class="portfolioSection__buttons">
-								<div>
-									<button>view live site</button>
-								</div>
-								<div>
-									<button>view on github</button>
-								</div>
-								<div>
-									<button>view psd</button>
-								</div>
+					<div class="portfolioSection__innerWrapper"><!-- has L and R outer margins -->
+						<div class="portfolioSection__imageContainer bakery__image">
+						</div>
+						<div class="portfolioSection__description">
+							<p class="portfolioSection__projectName">baker <br><span>and coffee</span></p>
+							<div class="portfolioSection__lineSegment"></div>
+							<div class="portfolioSection__text">
+							<p><span>HTML5</span> <span>CSS3</span> <span>FLOATS</span></p>
+								<p>detailed description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis libero nemo, facere dolorum dignissimos ad velit harum. Enim, natus, ea?</p>
+								<a class="portfolioSection__link" href="#">view live site</a>
+								<a class="portfolioSection__link" href="#">view on github</a>
+								<a class="portfolioSection__link" href="#">view psd</a>
 							</div>
 						</div>
 					</div>
@@ -185,11 +155,9 @@
 			<!-- </div>end .wrapper -->
 		</main>
 
-
-
 	<section class="aboutMe">
 		<div class="aboutMe__wrapper">
-			<p class="sectionName">About Me</p>
+			<p class="sectionName" id="aboutMe">About Me</p>
 			<div class="aboutMe__content">
 				<div class="aboutMe__imageContainer">
 					<img class="aboutMe__image" src="assets/JDGportrait_laughing_square.jpg" alt="professional photo of Jessica Del Grande laughing">
@@ -202,8 +170,8 @@
 					</div>
 					<div>
 						<p>I'm a front-end developer with extensive experience managing data-driven direct and digital projects in organizations of all sizes, from startups to international corporations. I'm an excellent communicator, a fearless question asker, and a lifelong learner.</p>
-						<p>My background in data and analytics...lorem lorem lorem</p>
-						<p>I have an eye for layout and a passion for clean, modular design that flows seamlessly between desktop, laptop, tablet, and mobile.</p>
+						<p>My background in advertising and production has refined my eye for layout and my passion for clean, modular design that flows seamlessly between devices of all sizes. I'm currently working with HTML5, CSS3, Sass, JavaScript, ES6, jQuery, Node.js, React, WordPress, Bootstrap, Git, GitHub, Gulp, and APIs (AJAX), building my fascination with data and my deep respect for JavaScript.</p>
+						<p>When I'm not coding, I can be found watching documentaries and foreign films, concocting herbal remedies, and trying to beat my grandpa at crokinole.</p>
 					</div>
 				</div>
 			</div><!-- end .aboutMe__content -->
@@ -249,11 +217,15 @@
 							<p>WORDPRESS</p>
 						</div>
 						<div class="devicon__single">
-							<i class="devicon-git-plain"></i>
-							<p>GIT</p>
+							<i class="devicon-bootstrap-plain"></i>
+							<p>BOOTSTRAP</p>
 						</div>
 					</div>
 					<div class="devicon__group--three">
+						<div class="devicon__single">
+							<i class="devicon-git-plain"></i>
+							<p>GIT</p>
+						</div>
 						<div class="devicon__single">
 							<i class="devicon-github-plain"></i>
 							<p>GITHUB</p>
@@ -261,10 +233,6 @@
 						<div class="devicon__single">
 							<i class="devicon-gulp-plain"></i>
 							<p>GULP</p>
-						</div>
-						<div class="devicon__single">
-							<i class="devicon-trello-plain"></i>
-							<p>TRELLO</p>
 						</div>
 					</div>
 				</div><!-- end .devicon__group six -->
@@ -274,38 +242,39 @@
 
 	<footer>
 		<div class="wrapper">
-			<h2 class="sectionName">Get In Touch</h2>
+			<h2 class="sectionName" id="contact">Get In Touch</h2>
 			<div class="getInTouch__columns">
 				<div class="social">
 					<div class="social__pairs">
 						<i class="fa fa-envelope" aria-hidden="true"></i>
-						<p>email</p>
+						<a class="social__label" href="mailto:hello@jessicadelgrande.com" target"_blank">hello@jessicadelgrande.com</a>
+						<!-- whyyyyy does my target not open in new tab? -->
 					</div>
 					<div class="social__pairs">
 						<i class="fa fa-twitter" aria-hidden="true"></i>
-						<p>Twitter</p>
+						<a class="social__label" href="https://twitter.com/jessdelgrande" target"_blank">@jessdelgrande</a>
 					</div>
 					<div class="social__pairs">
 						<i class="fa fa-medium" aria-hidden="true"></i>
-						<p>Medium</p>
+						<a class="social__label" href="https://medium.com/@jessica.delgrande" target"_blank">I blog on Medium</a>
 					</div>
 					<div class="social__pairs">
-						<i class="fa fa-github-alt" aria-hidden="true"></i>
-						<p>GitHub</p>
+						<i class="fa fa-github" aria-hidden="true"></i>
+						<a class="social__label" href="https://github.com/jessicadelgrande" target"_blank">I share my code on GitHub</a>
 					</div>
 					<div class="social__pairs">
 						<i class="fa fa-linkedin" aria-hidden="true"></i>
-						<p>LinkedIn</p>
+						<a class="social__label" href="linkedin.com/in/jessicadelgrande" target"_blank">I connect on LinkedIn</a>
 					</div>
 				</div>
-				<form action="">
-					<label for="name">Name</label>
-					<input type="text">
-					<label for="email">Email</label>
-					<input type="email">
-					<label for="yourMessage">Your Message</label>
-					<input type="textarea">
-					<button type="submit">Submit</button>
+				<form action="https://formspree.io/hello@jessicadelgrande.com" method="POST">
+					<label for="name">name</label>
+					<input type="text" name="name">
+					<label for="email">email</label>
+					<input type="email" name="_replyto">
+					<label for="yourMessage">your message</label>
+					<input type="textarea" name="yourMessage">
+					<button class="footer__button" type="submit" name="submit">submit</button>
 				</form>
 			</div>
 			<!-- hide form on mobile -->
@@ -320,22 +289,23 @@
 
 	
 	<!-- <div id="app"></div> -->
-	<script src="scripts/script.js"></script>
+	<!-- <script src="scripts/script.js"></script> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script>$(function() {
-     $('a[href*="#"]:not([href="#"])').click(function() {
-       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-         var target = $(this.hash);
-         target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-         if (target.length) {
-           $('html, body').animate({
-             scrollTop: target.offset().top
-           }, 1000);
-           return false;
-         }
-       }
-     });
-    });
-    </script>
+	    $('a[href*="#"]:not([href="#"])').click(function() {
+	        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+	        var target = $(this.hash);
+	            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	        if (target.length) {
+	            $('html, body').animate({
+	             scrollTop: target.offset().top
+	            }, 1000);
+	            return false;
+	        }
+	        }
+	        });
+	    });
+	    </script>
 
 </body>
 </html>

@@ -1,0 +1,140 @@
+main {
+	display: flex;
+	justify-content: center;
+}
+
+.sectionName {
+	font-size: 3.6rem;
+	font-weight: 100;
+	text-align: center;
+	text-transform: lowercase;
+	margin: 70px 0;
+}
+
+.portfolio {
+	margin-top: 130px;
+}
+
+.portfolioSection {
+	display: flex;
+	padding: 70px;
+}
+
+.portfolioSection__description {
+	width: 50%;
+	padding: 30px;
+}
+
+.portfolioSection__lineSegment {
+	width: 50px;
+	border-bottom: 2px solid black;
+	margin: 20px 0 25px 0;
+}
+
+.portfolioSection__imageContainer {
+	width: 50%;
+}
+
+.portfolioSection.ps__imageLeft {
+	background-color: rgba(239,209,198, 0.1);
+	display: flex;
+	justify-content: center;
+}
+
+.ps__imageLeft .portfolioSection__imageContainer {
+	display: flex;
+	padding: 70px;
+	margin-right: 50px;
+	@include portfolioImage;
+}
+
+.portfolioSection__innerWrapper {
+	width: 80%;
+	display: flex;
+}
+
+.portfolioSection.ps__imageRight {
+	display: flex;
+	justify-content: center;
+}
+
+.ps__imageRight .portfolioSection__imageContainer {
+	display: flex;
+	padding: 70px;
+	margin-left: 30px;
+	@include portfolioImage;
+}
+
+.askTheTarot__image {
+	margin: 40px;
+	background-image: url("../../assets/askthetarot_screenshot.jpg");
+}
+
+.whereShouldISurf__image {
+	margin: 40px;
+	background-image: url("../../assets/whereshouldisurf_screenshot.jpg");
+}
+
+.whatShouldIBring__image {
+	margin: 40px;
+	background-image: url("../../assets/whatshouldibring_screenshot.jpg");
+}
+
+.anatomy__image {
+	margin: 40px;
+	background-image: url("../../assets/anatomy_screenshot.jpg"); 
+}
+
+.bakery__image {
+	margin: 40px;
+	background-image: url("../../assets/bakery_screenshot.jpg");
+}
+
+.portfolioSection__projectName {
+	font-size: 1.8rem;
+	margin: 0;
+	line-height: 2rem;
+}
+
+.portfolioSection__projectName span {
+	font-size: 2.4rem;
+	line-height: 2.6rem;
+	font-weight: 500;
+}
+
+.portfolioSection__text {
+	margin-bottom: 20px;
+	@include bodyCopy;
+	span {
+		background-color: $colorPrimary;
+		padding: 6px;
+		margin: 4px;
+		line-height: 2rem;
+		white-space: nowrap;
+	}
+}
+
+// .portfolioSection__buttons {
+// 	display: flex;
+// }
+
+// .portfolioSection__buttons button {
+// 	@include portfolioButtonStyles;
+// }
+
+// .portfolioSection__buttons a {
+// 	text-decoration: none;
+// 	&:link {
+// 		color: black;
+// 	}
+// 	&:visited {
+// 		color: black;
+// 	}
+// 	&:hover {
+
+// 	}
+// }
+
+.portfolioSection__link {
+	@include portfolioLinkStyles;
+}

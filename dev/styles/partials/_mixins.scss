@@ -1,26 +1,68 @@
-// mixins to create:
-// portfolio images/sections
-// buttons
-// skills buttons
+@mixin navLinkStyles {
+	text-decoration: none;
+	padding: 2px 0;
+	color: black;
+	transition: border-bottom 0.2s ease-in-out;
+	&:visited {
+		color: black;
+	}
+	&:hover {
+		border-bottom: 2px solid $colorPrimary;
+		transition: border-bottom 0.2s ease-in-out;
+	}
+	&:focus {
+		outline: none;
+		border-bottom: 2px solid $colorPrimary;
+	}
+}
 
-@mixin buttonStyles {
+@mixin portfolioLinkStyles {
+	font-size: 0.8rem;
+	font-weight: 500;
+	letter-spacing: 1px;
+	border-bottom: 2px solid rgba(239,209,198, 0.1);
+	text-decoration: none;
+	padding: 10px 0 5px 0;
+	margin-right: 10px;
+	color: black;
+	transition: border-bottom 0.2s ease-in-out;
+	&:hover {
+		border-bottom: 2px solid black;
+		transition: border-bottom 0.2s ease-in-out
+	}
+	&:active {
+		color: black;
+	}
+	&:focus {
+		outline: none;
+	}
+}
+
+@mixin footerButtonStyles {
 	font-size: 0.8rem;
 	font-weight: 500;
 	letter-spacing: 1px;
 	-webkit-border: none;
 	outline: none;
 	border-radius: 50px;
-	border: 2px solid black;
+	border: 2px solid white;
+	color: black;
+	background-color: white;
 	height: 30px;
 	width: 130px;
 	text-decoration: none;
-	transition: transform 0.3s ease-in-out;
+	// transition: transform 0.3s ease-in-out;
 	&:focus {
 		outline: none;
 	}
 	&:hover {
-		transform: scale(1.1);
-		transition: transform 0.3s ease-in-out;
+		// transform: scale(1.1);
+		-webkit-box-shadow: 0px 0px 4px 2px rgba(255,255,255,1);
+		-moz-box-shadow: 0px 0px 4px 2px rgba(255,255,255,1);
+		box-shadow: 0px 0px 4px 2px rgba(255,255,255,1);
+		-webkit-transition: box-shadow 0.2s ease-in-out;
+		-moz-transition: box-shadow 0.2s ease-in-out;
+		transition: box-shadow 0.2s ease-in-out;
 	}
 }
 

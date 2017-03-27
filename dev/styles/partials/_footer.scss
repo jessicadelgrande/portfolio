@@ -1,0 +1,83 @@
+footer {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+	background-color: black;
+	color: white;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+}
+
+label {
+	font-size: 0.8rem;
+	padding: 5px 0;
+}
+
+input {
+	background-color: black;
+	border: none;
+	border-bottom: 1px solid white;
+	font-family: $fontPrimary;
+	font-size: 1rem;
+	margin: 5px 0;
+	padding: 5px;
+	&:focus {
+		outline-color: $colorPrimary;
+	}
+}
+
+form button {
+	background-color: white;
+	color: black;
+	border: 2px solid white;
+	margin: 30px 0 100px 0;
+}
+
+.getInTouch__columns {
+	display: flex;
+}
+
+.social {
+	width: 50%;
+}
+
+.social__pairs {
+	display: flex;
+	align-items: center;
+}
+
+.social__pairs i {
+	font-size: 2rem;
+	margin: 10px 0;
+}
+
+.social__label {
+	font-size: 0.8rem;
+	margin-left: 20px;
+	color: white;
+	padding: 2px;
+	border-bottom: 2px solid black;
+	a {
+		color: white
+	}
+	&:hover {
+		border-bottom: 2px solid $colorPrimary;
+	}
+}
+
+.footer__button {
+	@include footerButtonStyles;
+}
+
+.copyright {
+	background-color: white;
+	color: black;
+	font-weight: 500;
+	text-align: center;
+	margin: 30px 0;
+}
