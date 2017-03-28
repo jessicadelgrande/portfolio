@@ -1,0 +1,124 @@
+@mixin navLinkStyles {
+	text-decoration: none;
+	padding: 2px 0;
+	color: black;
+	border-bottom: 2px solid white;
+	transition: border-bottom 0.2s ease-in-out;
+	&:visited {
+		color: black;
+	}
+	&:hover {
+		border-bottom: 2px solid $colorPrimary;
+		transition: border-bottom 0.2s ease-in-out;
+	}
+	&:focus {
+		outline: none;
+		border-bottom: 2px solid $colorPrimary;
+	}
+}
+
+@mixin headerButtonStyles {
+	font-size: 0.8rem;
+	font-weight: 500;
+	letter-spacing: 1px;
+	-webkit-border: none;
+	outline: none;
+	border-radius: 50px;
+	border: 2px solid black;
+	height: 40px;
+	width: 130px;
+	background-color: black;
+	color: white;
+	text-decoration: none;
+	transition: transform 0.3s ease-in-out;
+	&:focus {
+		outline: none;
+	}
+	&:hover {
+		transform: scale(1.1);
+		transition: transform 0.3s ease-in-out;
+	}
+}
+
+@mixin portfolioLinkStyles {
+	font-size: 0.8rem;
+	font-weight: 500;
+	letter-spacing: 1px;
+	line-height: 2rem;
+	border-bottom: 2px solid rgba(239,209,198, 0.1);
+	text-decoration: none;
+	padding: 10px 0 5px 0;
+	margin: 0 10px 5px 0;
+	color: black;
+	white-space: nowrap;
+	transition: border-bottom 0.2s ease-in-out;
+	&:hover {
+		border-bottom: 2px solid black;
+		transition: border-bottom 0.2s ease-in-out
+	}
+	&:active {
+		color: black;
+	}
+	&:focus {
+		outline: none;
+	}
+}
+
+@mixin footerButtonStyles {
+	font-size: 0.8rem;
+	font-weight: 500;
+	letter-spacing: 1px;
+	-webkit-border: none;
+	outline: none;
+	border-radius: 0;
+	// border-bottom: 2px solid white;
+	background-color: black;
+	color: white;
+	text-decoration: none;
+	transition: border-bottom 0.2s ease-in-out;
+	&:focus {
+		outline: none;
+	}
+	&:hover {
+		transition: border-bottom 0.2s ease-in-out;
+	}
+}
+
+@mixin bodyCopy {
+	font-family: $fontPrimary;
+	font-size: 0.8rem;
+	line-height: 1.2rem;
+	letter-spacing: 0.1rem;
+}
+
+// @mixin portfolioImage {
+// 	width: 50%;
+// 	background-size: 90%;
+// 	background-repeat: no-repeat;
+// 	background-position: center 30px;
+// 	@include bp(lrg) {
+// 		height: 50%;
+// 	}
+// }
+
+@mixin bp($size) {
+ 
+	@if $size == 'lrg' {
+		@media (max-width: 768px) { 
+			@content; 
+		}
+	}
+
+	@if $size == 'med' {
+		@media (max-width: 425px) { 
+			@content; 
+		}
+	}
+
+	// @if $size == 'sml' {
+	// 	@media (max-width: 615px) { 
+	// 		@content; 
+	// 	}
+	// }
+
+}

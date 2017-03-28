@@ -1,0 +1,27 @@
+// manifest
+@import 'partials/setup';
+@import 'partials/variables';
+@import 'partials/mixins';
+@import 'partials/header';
+@import 'partials/portfolio';
+@import 'partials/aboutMe';
+@import 'partials/footer';
+
+body {
+	font-size: 62.5%;
+	font-family: $fontPrimary;
+	font-weight: 200;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+.wrapper {
+	width: 80%;
+	
+}
+
+// * {
+// 	border: 1px solid red;
+// }

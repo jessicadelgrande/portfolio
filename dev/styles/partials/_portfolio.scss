@@ -1,0 +1,109 @@
+main {
+	display: flex;
+	justify-content: center;
+}
+
+.sectionName {
+	font-size: 3.6rem;
+	font-weight: 100;
+	text-align: center;
+	text-transform: lowercase;
+	margin: 70px 0;
+}
+
+.portfolio {
+	margin-top: 130px;
+}
+
+.portfolioSection__description {
+	width: 50%;
+	padding: 30px;
+	@include bp(lrg) {
+		width: 100%;
+	}
+}
+
+.portfolioSection__lineSegment {
+	width: 50px;
+	border-bottom: 2px solid black;
+	margin: 20px 0 25px 0;
+}
+
+.ps__imageLeft {
+	background-color: rgba(239,209,198, 0.1);
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	padding: 70px;
+}
+
+.ps__imageRight {
+	display: flex;
+	justify-content: center;
+	padding: 70px;
+	@include bp(med) {
+		padding: 35px;
+	}
+}
+
+// *****
+// flex this at media breakpoints!!
+.portfolioSection__innerWrapper {
+	width: 80%;
+	display: flex;
+	@include bp(lrg) {
+		flex-direction: column;
+	}
+}
+
+.imageRight {
+	@include bp(lrg) {
+		flex-direction: column-reverse;
+	}
+}
+
+.imageContainer {
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	@include bp(lrg) {
+		width: 100%;
+	}
+}
+
+.imageContainer img {
+	width: 100%;
+}
+
+.innerImageContainer {
+	width: 90%;
+	padding-top: 30px;
+}
+
+.portfolioSection__projectName {
+	font-size: 1.8rem;
+	margin: 0;
+	line-height: 2rem;
+}
+
+.portfolioSection__projectName span {
+	font-size: 2.4rem;
+	line-height: 2.8rem;
+	font-weight: 500;
+}
+
+.portfolioSection__text {
+	margin-bottom: 20px;
+	@include bodyCopy;
+	span {
+		background-color: $colorPrimary;
+		padding: 6px;
+		margin: 4px;
+		line-height: 2rem;
+		white-space: nowrap;
+	}
+}
+
+.portfolioSection__link {
+	@include portfolioLinkStyles;
+}

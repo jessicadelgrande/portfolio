@@ -1,0 +1,113 @@
+nav {
+	display: flex;
+	justify-content: flex-end;
+	text-transform: lowercase;
+	margin: 20px 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+header {
+	width: 80vw;
+	height: 75vh;
+	background-image: url("../../assets/richard-tilney-bassett-182708_bg.jpg");
+	background-position: right top;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.navItems {
+	display: flex;
+	font-size: 0.8rem;
+	color: $colorSecondary;
+	justify-content: flex-end;
+}
+
+.navItems div {
+	margin: 0 15px;
+	letter-spacing: 0.1rem;
+	&:last-of-type {
+		margin-right: 0;
+	}
+}
+
+.navItems__item a {
+	@include navLinkStyles;
+}
+
+.header__container {
+	background-color: white;
+	height: 95vh;
+	display: flex;
+	justify-content: center;
+}
+
+.header__image {
+	width: 80vw;
+	height: 75vh;
+	background-image: url("../../assets/richard-tilney-bassett-182708_bg.jpg");
+	background-position: right top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.overlay {
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: rgba(239,209,198, 0.5);
+	height: 75vh;
+	width: 80vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.header__text {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	letter-spacing: 1px;
+}
+
+.header__text h1 {
+	text-align: center;
+	font-size: 3.6rem;
+	font-weight: 500;
+	margin: 0;
+}
+
+.lineSegment {
+	width: 50px;
+	border-bottom: 2px solid black;
+	margin: 15px 0 17px 0;
+}
+
+.header__text--subhead {
+	font-size: 1.3rem;
+	text-align: center;
+	line-height: 1.6rem;
+	text-transform: lowercase;
+	margin: 0 0 80px 0;
+	letter-spacing: 1px;
+}
+
+.header__button {
+	@include headerButtonStyles;
+}
+
+.header__button--link {
+	&:visited {
+		color: white;
+	}
+	&:hover {
+		color: white;
+	}
+	&:active {
+		color: none;
+		outline: none;
+	}
+}

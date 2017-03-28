@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="UTF-8">
+	<title>Jessica Del Grande | Front-End Developer | Toronto</title>
+	<link rel="stylesheet" href="public/styles/style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,500" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/4f6a4b08efdad6bb29f9cc801f5c07e263b39907/devicon.min.css">
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body>
+
+	<div class="wrapper">
+
+		<nav class="navItems">
+			<div>
+				<p class="navItems__item"><a href="#portfolio">Portfolio</a></p>
+			</div>
+			<div>
+				<p class="navItems__item"><a href="#aboutMe">About Me</a></p>
+			</div>
+			<div>
+				<p class="navItems__item"><a href="#contact">Contact</a></p>
+			</div>
+		</nav>
+
+		<header>
+			<div class="header__container">
+				<div class="header__image">
+					<div class="overlay">
+						<div class="header__text">
+							<h1>Jessica Del Grande</h1>
+							<div class="lineSegment"></div>
+							<p class="header__text--subhead">Front-End Developer<br> based in Toronto</p>
+							<button class="header__button">
+								<a class="header__button--link" href="#contact">get in touch</a>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+	</div>
+
+	<main>
+		<section class="portfolio">
+			<p class ="sectionName" id="portfolio">portfolio</p>
+			<!-- roll up all descriptions on mobile (JS?) -->
+			<!-- show only image, project name, skill buttons, links, and then "click for description" or something to unroll -->
+			<div class="ps__imageLeft"><!-- contains background color -->
+				<div class="portfolioSection__innerWrapper"><!-- has L and R outer margins -->
+					<div class="imageContainer">
+						<div class="innerImageContainer">
+							<img src="../../assets/askthetarot_screenshot.jpg" alt="">	
+						</div>
+					</div>
+					<div class="portfolioSection__description">
+						<p class="portfolioSection__projectName">ask the <br><span>tarot</span></p>
+						<div class="portfolioSection__lineSegment"></div>
+						<div class="portfolioSection__text">
+							<p><span>REACT</span> <span>FIREBASE</span> <span>JAVASCRIPT</span> <span>ES6</span> <span>CSS3</span> <span>SASS</span> <span>HTML5</span></p>
+							<p>React application using a randomly generated number to return data from a custom-built Firebase API.</p>
+							<a class="portfolioSection__link" href="http://jessicadelgrande.com/askthetarot/" target="_blank">view live site</a>
+							<a class="portfolioSection__link" href="https://github.com/jessicadelgrande/askthetarot" target="_blank">view on github</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="ps__imageRight">
+				<div class="portfolioSection__innerWrapper"><!-- has L and R outer margins -->
+					<div class="portfolioSection__description">
+						<p class="portfolioSection__projectName">what should i <br><span>bring?</span></p>
+						<div class="portfolioSection__lineSegment"></div>
+						<div class="portfolioSection__text">
+							<p><span>API</span> <span>AJAX</span> <span>JAVASCRIPT</span> <span>ES6</span> <span>JQUERY</span> <span>CSS3</span> <span>SASS</span> <span>HTML5</span> <span>GIT</span> <span>GITHUB</span></p>
+							<p>Interactive site that pulls from the LCBO API and multiple Google Maps APIs to provide gift suggestions based on user input. Built in a small team in a mock agency environment.</p>
+							<a class="portfolioSection__link" href="https://whatshouldibring.github.io/ProjectFive/" target="_blank">view live site</a>
+							<a class="portfolioSection__link" href="https://github.com/jessicadelgrande/ProjectFive" target="_blank">view on github</a>
+						</div>
+					</div>
+					<div class="imageContainer">
+						<div class="innerImageContainer">
+							<img src="../../assets/whatshouldibring_screenshot.jpg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="ps__imageLeft"><!-- contains background color -->
+				<div class="portfolioSection__innerWrapper"><!-- has L and R outer margins -->
+					<div class="imageContainer">
+						<div class="innerImageContainer">
+							<img src="../../assets/anatomy_screenshot.jpg" alt="">
+						</div>
+					</div>
+					<div class="portfolioSection__description">
+						<p class="portfolioSection__projectName">anatomy <br><span>quiz</span></p>
+						<div class="portfolioSection__lineSegment"></div>
+						<div class="portfolioSection__text">
+							<p><span>JAVASCRIPT</span> <span>JQUERY</span> <span>SVG</span> <span>CSS3</span> <span>SASS</span> <span>HTML5</span> <span>PAIR PROGRAMMING</span></p>
+							<p>Highly interactive anatomy quiz comparing user input from SVG model and form fields with a large JavaScript data object. Built using the agile development technique of pair programming.</p>
+							<a class="portfolioSection__link" href="http://jessicadelgrande.com/anatomy/" target="_blank">view live site</a>
+							<a class="portfolioSection__link" href="https://github.com/jessicadelgrande/learnanatomy" target="_blank">view on github</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="ps__imageRight">
+				<div class="portfolioSection__innerWrapper"><!-- has L and R outer margins -->
+					<div class="portfolioSection__description">
+						<p class="portfolioSection__projectName">baker <br><span>and coffee</span></p>
+						<div class="portfolioSection__lineSegment"></div>
+						<div class="portfolioSection__text">
+						<p><span>CSS3</span> <span>SASS</span> <span>FLEXBOX</span> <span>HTML5</span></p>
+							<p>Pixel-perfect translation of PSD file into responsive webpage.</p>
+							<a class="portfolioSection__link" href="http://jessicadelgrande.com/bakerandcoffee" target="_blank">view live site</a>
+							<a class="portfolioSection__link" href="https://github.com/jessicadelgrande/bakerandcoffee" target="_blank">view on github</a>
+							<a class="portfolioSection__link" href="../assets/bakery_original.jpg" target="_blank">view psd</a>
+						</div>
+					</div>
+					<div class="imageContainer">
+						<div class="innerImageContainer">
+							<img src="../../assets/bakery_screenshot.jpg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section><!-- end .portfolio -->
+	</main>
+
+	<section class="aboutMe">
+		<div class="aboutMe__wrapper">
+			<p class="sectionName" id="aboutMe">About Me</p>
+			<div class="aboutMe__content">
+				<div class="aboutMe__imageContainer">
+					<img class="aboutMe__image" src="assets/JDGportrait_laughing_square.jpg" alt="professional photo of Jessica Del Grande laughing">
+				</div>
+				<div class="aboutMe__textContainer">
+					<div>
+						<p class="aboutMe__name">Jessica Del Grande</p>
+						<div class="lineSegment"></div>
+						<p class="aboutMe__title">Front-End Developer</p>
+					</div>
+					<div>
+						<p>I'm a front-end developer with extensive experience managing data-driven digital and direct marketing projects in organizations of all sizes, from startups to international corporations. I'm an excellent communicator, a fearless question asker, and a lifelong learner.</p>
+						<p>My background in advertising and production has refined my eye for layout and my passion for clean, modular design that flows seamlessly between devices of all sizes. I'm currently coding in Sublime and using HTML5, CSS3, Sass/SCSS, JavaScript, ES6, jQuery and other JavaScript libraries, React, WordPress, PHP, Bootstrap, Git, GitHub, Gulp, Firebase, and APIs (AJAX), building on my fascination with data and my deep respect for JavaScript.</p>
+						<p>When I'm not coding, I can be found watching documentaries and foreign films, concocting herbal remedies, and trying to beat my grandpa at crokinole.</p>
+					</div>
+				</div>
+			</div><!-- end .aboutMe__content -->
+			<div class="devicons">
+				<div class="devicon__group--six">
+					<div class="devicon__group--three">
+						<div class="devicon__single">
+							<i class="devicon-html5-plain"></i>
+							<p>HTML5</p>
+						</div>
+						<div class="devicon__single">
+							<i class="devicon-css3-plain"></i>
+							<p>CSS3</p>
+						</div>
+						<div class="devicon__single">
+							<i class="devicon-sass-original"></i>
+							<p>SASS</p>
+						</div>
+					</div>
+					<div class="devicon__group--three">
+						<div class="devicon__single">
+							<i class="devicon-javascript-plain"></i>
+							<p>JAVASCRIPT</p>
+						</div>
+						<div class="devicon__single">
+							<i class="devicon-jquery-plain"></i>
+							<p>JQUERY</p>
+						</div>
+						<div class="devicon__single">
+							<i class="devicon-react-original"></i>
+							<p>REACT</p>
+						</div>
+					</div>
+				</div>
+				<div class="devicon__group--six">
+					<div class="devicon__group--three">
+						<div class="devicon__single">
+							<i class="devicon-wordpress-plain"></i>
+							<p>WORDPRESS</p>
+						</div>
+						<div class="devicon__single">
+							<i class="devicon-php-plain"></i>
+							<p>PHP</p>
+						</div>
+						<div class="devicon__single">
+							<i class="devicon-bootstrap-plain"></i>
+							<p>BOOTSTRAP</p>
+						</div>
+					</div>
+					<div class="devicon__group--three">
+						<div class="devicon__single">
+							<i class="devicon-git-plain"></i>
+							<p>GIT</p>
+						</div>
+						<div class="devicon__single">
+							<i class="devicon-github-plain"></i>
+							<p>GITHUB</p>
+						</div>
+						<div class="devicon__single">
+							<i class="devicon-gulp-plain"></i>
+							<p>GULP</p>
+						</div>
+					</div>
+				</div><!-- end .devicon__group six -->
+			</div><!-- end .devicons -->
+		</div><!-- end .aboutMe__wrapper -->
+	</section><!-- end .aboutMe -->
+
+	<footer>
+		<div class="wrapper">
+			<h2 class="sectionName" id="contact">Get In Touch</h2>
+			<div class="getInTouch__columns">
+				<div class="social">
+					<div class="social__pairs">
+						<i class="fa fa-envelope" aria-hidden="true"></i>
+						<a class="social__label" href="mailto:hello@jessicadelgrande.com" target"_blank">hello@jessicadelgrande.com</a>
+					</div>
+					<div class="social__pairs">
+						<i class="fa fa-twitter" aria-hidden="true"></i>
+						<a class="social__label" href="https://twitter.com/jessdelgrande" target"_blank">@jessdelgrande</a>
+					</div>
+					<div class="social__pairs">
+						<i class="fa fa-medium" aria-hidden="true"></i>
+						<a class="social__label" href="https://medium.com/@jessica.delgrande" target"_blank">I blog on Medium</a>
+					</div>
+					<div class="social__pairs">
+						<i class="fa fa-github" aria-hidden="true"></i>
+						<a class="social__label" href="https://github.com/jessicadelgrande" target"_blank">I share my code on GitHub</a>
+					</div>
+					<div class="social__pairs">
+						<i class="fa fa-linkedin" aria-hidden="true"></i>
+						<a class="social__label" href="http://linkedin.com/in/jessicadelgrande" target"_blank">I connect on LinkedIn</a>
+					</div>
+				</div>
+				<form action="https://formspree.io/hello@jessicadelgrande.com" method="POST">
+					<label for="name">name</label>
+					<input type="text" name="name">
+					<label for="email">email</label>
+					<input type="email" name="_replyto">
+					<label for="yourMessage">your message</label>
+					<input type="textarea" name="yourMessage">
+					<button class="footer__button" type="submit" name="submit">submit</button>
+				</form>
+			</div>
+			<!-- hide form on mobile -->
+		</div><!-- end .wrapper -->
+	</footer>
+
+	<div class="copyright">
+		<p>&copy; 
+		<script type="text/javascript">document.write(new Date().getFullYear());</script> 
+		Jessica Del Grande</p>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script>$(function() {
+	    $('a[href*="#"]:not([href="#"])').click(function() {
+	        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+	        var target = $(this.hash);
+	            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	        if (target.length) {
+	            $('html, body').animate({
+	             scrollTop: target.offset().top
+	            }, 1000);
+	            return false;
+	        }
+	        }
+	        });
+	    });
+	    </script>
+
+</body>
+</html>
