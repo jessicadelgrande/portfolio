@@ -7,7 +7,7 @@
 	<title>Jessica Del Grande | Front-End Developer | Toronto</title>
 	<link rel="stylesheet" href="/public/styles/style.css">
 	<meta charset="utf-8">
-	<meta name="viewport" content="initial-scale=1.0" user-scalable="no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,500" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/4f6a4b08efdad6bb29f9cc801f5c07e263b39907/devicon.min.css">
@@ -54,8 +54,10 @@
 						<div class="header__text">
 							<h1>Jessica Del Grande</h1>
 							<div class="lineSegment"></div>
-							<p class="header__text--subhead">Front-End Developer</p>
-							<a class="portfolioSection__link" href="#contact">get in touch</a>
+							<p class="header__text--subhead">Front-End Developer<br> based in Toronto</p>
+							<button class="header__button">
+								<a class="header__button--link" href="#contact">get in touch</a>
+							</button>
 						</div>
 					</div>
 				</div>
@@ -63,97 +65,91 @@
 		</header>
 	</div>
 
-	<!-- <div class="portfolioWrapper"> -->
-		<main>
-			<section class="portfolio">
-				<p class ="sectionName" id="portfolio">portfolio</p>
-				<!-- roll up all descriptions on mobile (JS?) -->
-				<!-- show only image, project name, skill buttons, links, and then "click for description" or something to unroll -->
-				<div class="portfolioSection ps__imageLeft"><!-- contains background color -->
-					<div class="portfolioSection__innerWrapper"><!-- has L and R outer margins -->
-						<div class="portfolioSection__imageContainer askTheTarot__image">
-						</div>
-						<div class="portfolioSection__description">
-							<p class="portfolioSection__projectName">ask the <br><span>tarot</span></p>
-							<div class="portfolioSection__lineSegment"></div>
-							<div class="portfolioSection__text">
-								<p><span>REACT</span> <span>FIREBASE</span></p>
-								<p>detailed description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis libero nemo, facere dolorum dignissimos ad velit harum. Enim, natus, ea?</p>
-								<a class="portfolioSection__link" href="http://jessicadelgrande.com/askthetarot/" target="_blank">view live site</a>
-								<a class="portfolioSection__link" href="#">view on github</a>
-							</div>
+	<main>
+		<section class="portfolio">
+			<p class ="sectionName" id="portfolio">portfolio</p>
+			<!-- roll up all descriptions on mobile (JS?) -->
+			<!-- show only image, project name, skill buttons, links, and then "click for description" or something to unroll -->
+			<div class="ps__imageLeft"><!-- contains background color -->
+				<div class="portfolioSection__innerWrapper"><!-- has L and R outer margins -->
+					<div class="imageContainer">
+						<div class="innerImageContainer">
+							<img src="../../assets/askthetarot_screenshot.jpg" alt="">	
 						</div>
 					</div>
+					<div class="portfolioSection__description">
+						<p class="portfolioSection__projectName">ask the <br><span>tarot</span></p>
+						<div class="portfolioSection__lineSegment"></div>
+						<div class="portfolioSection__text">
+							<p><span>REACT</span> <span>FIREBASE</span> <span>JAVASCRIPT</span> <span>ES6</span> <span>CSS3</span> <span>SASS</span> <span>HTML5</span></p>
+							<p>React application using a randomly generated number to return data from a custom-built Firebase API.</p>
+							<a class="portfolioSection__link" href="http://jessicadelgrande.com/askthetarot/" target="_blank">view live site</a>
+							<a class="portfolioSection__link" href="https://github.com/jessicadelgrande/askthetarot" target="_blank">view on github</a>
+						</div>
+					</div>
+				</div>
+			</div>
 
-				</div>
-				<div class="portfolioSection ps__imageRight">
-					<div class="portfolioSection__innerWrapper"><!-- has L and R outer margins -->
-						<div class="portfolioSection__description">
-							<p class="portfolioSection__projectName">where should i <br><span>surf?</span></p>
-							<div class="portfolioSection__lineSegment"></div>
-							<div class="portfolioSection__text">
-								<p><span>JAVASCRIPT</span> <span>ES6</span> <span>JQUERY</span> <span>UNDERSCORE</span> <span>APIs</span></p>
-								<p>detailed description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis libero nemo, facere dolorum dignissimos ad velit harum. Enim, natus, ea?</p>
-								<a class="portfolioSection__link" href="#">view live site</a>
-								<a class="portfolioSection__link" href="#">view on github</a>
-							</div>
+			<div class="ps__imageRight">
+				<div class="portfolioSection__innerWrapper"><!-- has L and R outer margins -->
+					<div class="portfolioSection__description">
+						<p class="portfolioSection__projectName">what should i <br><span>bring?</span></p>
+						<div class="portfolioSection__lineSegment"></div>
+						<div class="portfolioSection__text">
+							<p><span>API</span> <span>AJAX</span> <span>JAVASCRIPT</span> <span>ES6</span> <span>JQUERY</span> <span>CSS3</span> <span>SASS</span> <span>HTML5</span> <span>GIT</span> <span>GITHUB</span></p>
+							<p>Interactive site that pulls from the LCBO API and multiple Google Maps APIs to provide gift suggestions based on user input. Built in a small team in a mock agency environment.</p>
+							<a class="portfolioSection__link" href="https://whatshouldibring.github.io/ProjectFive/" target="_blank">view live site</a>
+							<a class="portfolioSection__link" href="https://github.com/jessicadelgrande/ProjectFive" target="_blank">view on github</a>
 						</div>
-						<div class="portfolioSection__imageContainer whereShouldISurf__image">
+					</div>
+					<div class="imageContainer">
+						<div class="innerImageContainer">
+							<img src="../../assets/whatshouldibring_screenshot.jpg" alt="">
 						</div>
 					</div>
 				</div>
-				<div class="portfolioSection ps__imageLeft">
-					<div class="portfolioSection__innerWrapper"><!-- has L and R outer margins -->
-						<div class="portfolioSection__imageContainer whatShouldIBring__image">
+			</div>
+			<div class="ps__imageLeft"><!-- contains background color -->
+				<div class="portfolioSection__innerWrapper"><!-- has L and R outer margins -->
+					<div class="imageContainer">
+						<div class="innerImageContainer">
+							<img src="../../assets/anatomy_screenshot.jpg" alt="">
 						</div>
-						<div class="portfolioSection__description">
-							<p class="portfolioSection__projectName">what should i <br><span>bring?</span></p>
-							<div class="portfolioSection__lineSegment"></div>
-							<div class="portfolioSection__text">
-								<p><span>JAVASCRIPT</span> <span>ES6</span> <span>JQUERY</span> <span>GOOGLE API</span></p>
-								<p>Interactive site that pulls from the LCBO API and Google Maps API to provide gift suggestions based on user input.</p>
-								<a class="portfolioSection__link" href="#">view live site</a>
-								<a class="portfolioSection__link" href="#">view on github</a>
-							</div>
+					</div>
+					<div class="portfolioSection__description">
+						<p class="portfolioSection__projectName">anatomy <br><span>quiz</span></p>
+						<div class="portfolioSection__lineSegment"></div>
+						<div class="portfolioSection__text">
+							<p><span>JAVASCRIPT</span> <span>JQUERY</span> <span>SVG</span> <span>CSS3</span> <span>SASS</span> <span>HTML5</span> <span>PAIR PROGRAMMING</span></p>
+							<p>Highly interactive anatomy quiz comparing user input from SVG model and form fields with a large JavaScript data object. Built using the agile development technique of pair programming.</p>
+							<a class="portfolioSection__link" href="http://jessicadelgrande.com/anatomy/" target="_blank">view live site</a>
+							<a class="portfolioSection__link" href="https://github.com/jessicadelgrande/learnanatomy" target="_blank">view on github</a>
 						</div>
 					</div>
 				</div>
-				<div class="portfolioSection ps__imageRight">
-					<div class="portfolioSection__innerWrapper"><!-- has L and R outer margins -->
-						<div class="portfolioSection__description">
-							<p class="portfolioSection__projectName">anatomy <br><span>quiz</span></p>
-							<div class="portfolioSection__lineSegment"></div>
-							<div class="portfolioSection__text">
-								<p><span>JAVASCRIPT</span> <span>JQUERY</span> <span>SVG</span></p>
-								<p>detailed description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis libero nemo, facere dolorum dignissimos ad velit harum. Enim, natus, ea?</p>
-								<a class="portfolioSection__link" href="#">view live site</a>
-								<a class="portfolioSection__link" href="#">view on github</a>
-							</div>
+			</div>
+			<div class="ps__imageRight">
+				<div class="portfolioSection__innerWrapper"><!-- has L and R outer margins -->
+					<div class="portfolioSection__description">
+						<p class="portfolioSection__projectName">baker <br><span>and coffee</span></p>
+						<div class="portfolioSection__lineSegment"></div>
+						<div class="portfolioSection__text">
+						<p><span>CSS3</span> <span>SASS</span> <span>FLEXBOX</span> <span>HTML5</span></p>
+							<p>Pixel-perfect translation of PSD file into responsive webpage.</p>
+							<a class="portfolioSection__link" href="http://jessicadelgrande.com/bakerandcoffee" target="_blank">view live site</a>
+							<a class="portfolioSection__link" href="https://github.com/jessicadelgrande/bakerandcoffee" target="_blank">view on github</a>
+							<a class="portfolioSection__link" href="../assets/bakery_original.jpg" target="_blank">view psd</a>
 						</div>
-						<div class="portfolioSection__imageContainer anatomy__image">
+					</div>
+					<div class="imageContainer">
+						<div class="innerImageContainer">
+							<img src="../../assets/bakery_screenshot.jpg" alt="">
 						</div>
 					</div>
 				</div>
-				<div class="portfolioSection ps__imageLeft">
-					<div class="portfolioSection__innerWrapper"><!-- has L and R outer margins -->
-						<div class="portfolioSection__imageContainer bakery__image">
-						</div>
-						<div class="portfolioSection__description">
-							<p class="portfolioSection__projectName">baker <br><span>and coffee</span></p>
-							<div class="portfolioSection__lineSegment"></div>
-							<div class="portfolioSection__text">
-							<p><span>HTML5</span> <span>CSS3</span> <span>FLOATS</span></p>
-								<p>detailed description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis libero nemo, facere dolorum dignissimos ad velit harum. Enim, natus, ea?</p>
-								<a class="portfolioSection__link" href="#">view live site</a>
-								<a class="portfolioSection__link" href="#">view on github</a>
-								<a class="portfolioSection__link" href="#">view psd</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section><!-- end .portfolio -->
-			<!-- </div>end .wrapper -->
-		</main>
+			</div>
+		</section><!-- end .portfolio -->
+	</main>
 
 	<section class="aboutMe">
 		<div class="aboutMe__wrapper">
@@ -169,8 +165,8 @@
 						<p class="aboutMe__title">Front-End Developer</p>
 					</div>
 					<div>
-						<p>I'm a front-end developer with extensive experience managing data-driven direct and digital projects in organizations of all sizes, from startups to international corporations. I'm an excellent communicator, a fearless question asker, and a lifelong learner.</p>
-						<p>My background in advertising and production has refined my eye for layout and my passion for clean, modular design that flows seamlessly between devices of all sizes. I'm currently working with HTML5, CSS3, Sass, JavaScript, ES6, jQuery, Node.js, React, WordPress, Bootstrap, Git, GitHub, Gulp, and APIs (AJAX), building my fascination with data and my deep respect for JavaScript.</p>
+						<p>I'm a front-end developer with extensive experience managing data-driven digital and direct marketing projects in organizations of all sizes, from startups to international corporations. I'm an excellent communicator, a fearless question asker, and a lifelong learner.</p>
+						<p>My background in advertising and production has refined my eye for layout and my passion for clean, modular design that flows seamlessly between devices of all sizes. I'm currently coding in Sublime and using HTML5, CSS3, Sass/SCSS, JavaScript, ES6, jQuery and other JavaScript libraries, React, WordPress, PHP, Bootstrap, Git, GitHub, Gulp, Firebase, and APIs (AJAX), building on my fascination with data and my deep respect for JavaScript.</p>
 						<p>When I'm not coding, I can be found watching documentaries and foreign films, concocting herbal remedies, and trying to beat my grandpa at crokinole.</p>
 					</div>
 				</div>
@@ -201,20 +197,20 @@
 							<p>JQUERY</p>
 						</div>
 						<div class="devicon__single">
-							<i class="devicon-nodejs-plain"></i>
-							<p>NODE.JS</p>
+							<i class="devicon-react-original"></i>
+							<p>REACT</p>
 						</div>
 					</div>
 				</div>
 				<div class="devicon__group--six">
 					<div class="devicon__group--three">
 						<div class="devicon__single">
-							<i class="devicon-react-original"></i>
-							<p>REACT</p>
-						</div>
-						<div class="devicon__single">
 							<i class="devicon-wordpress-plain"></i>
 							<p>WORDPRESS</p>
+						</div>
+						<div class="devicon__single">
+							<i class="devicon-php-plain"></i>
+							<p>PHP</p>
 						</div>
 						<div class="devicon__single">
 							<i class="devicon-bootstrap-plain"></i>
@@ -248,7 +244,6 @@
 					<div class="social__pairs">
 						<i class="fa fa-envelope" aria-hidden="true"></i>
 						<a class="social__label" href="mailto:hello@jessicadelgrande.com" target"_blank">hello@jessicadelgrande.com</a>
-						<!-- whyyyyy does my target not open in new tab? -->
 					</div>
 					<div class="social__pairs">
 						<i class="fa fa-twitter" aria-hidden="true"></i>
@@ -264,7 +259,7 @@
 					</div>
 					<div class="social__pairs">
 						<i class="fa fa-linkedin" aria-hidden="true"></i>
-						<a class="social__label" href="linkedin.com/in/jessicadelgrande" target"_blank">I connect on LinkedIn</a>
+						<a class="social__label" href="http://linkedin.com/in/jessicadelgrande" target"_blank">I connect on LinkedIn</a>
 					</div>
 				</div>
 				<form action="https://formspree.io/hello@jessicadelgrande.com" method="POST">
@@ -287,9 +282,6 @@
 		Jessica Del Grande</p>
 	</div>
 
-	
-	<!-- <div id="app"></div> -->
-	<!-- <script src="scripts/script.js"></script> -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script>$(function() {
 	    $('a[href*="#"]:not([href="#"])').click(function() {

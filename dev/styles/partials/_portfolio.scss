@@ -15,14 +15,12 @@ main {
 	margin-top: 130px;
 }
 
-.portfolioSection {
-	display: flex;
-	padding: 70px;
-}
-
 .portfolioSection__description {
 	width: 50%;
 	padding: 30px;
+	@include bp(lrg) {
+		width: 100%;
+	}
 }
 
 .portfolioSection__lineSegment {
@@ -31,63 +29,55 @@ main {
 	margin: 20px 0 25px 0;
 }
 
-.portfolioSection__imageContainer {
-	width: 50%;
-}
-
-.portfolioSection.ps__imageLeft {
+.ps__imageLeft {
 	background-color: rgba(239,209,198, 0.1);
+	width: 100vw;
 	display: flex;
 	justify-content: center;
-}
-
-.ps__imageLeft .portfolioSection__imageContainer {
-	display: flex;
 	padding: 70px;
-	margin-right: 50px;
-	@include portfolioImage;
 }
 
+.ps__imageRight {
+	display: flex;
+	justify-content: center;
+	padding: 70px;
+	@include bp(med) {
+		padding: 35px;
+	}
+}
+
+// *****
+// flex this at media breakpoints!!
 .portfolioSection__innerWrapper {
 	width: 80%;
 	display: flex;
+	@include bp(lrg) {
+		flex-direction: column;
+	}
 }
 
-.portfolioSection.ps__imageRight {
+.imageRight {
+	@include bp(lrg) {
+		flex-direction: column-reverse;
+	}
+}
+
+.imageContainer {
+	width: 50%;
 	display: flex;
 	justify-content: center;
+	@include bp(lrg) {
+		width: 100%;
+	}
 }
 
-.ps__imageRight .portfolioSection__imageContainer {
-	display: flex;
-	padding: 70px;
-	margin-left: 30px;
-	@include portfolioImage;
+.imageContainer img {
+	width: 100%;
 }
 
-.askTheTarot__image {
-	margin: 40px;
-	background-image: url("../../assets/askthetarot_screenshot.jpg");
-}
-
-.whereShouldISurf__image {
-	margin: 40px;
-	background-image: url("../../assets/whereshouldisurf_screenshot.jpg");
-}
-
-.whatShouldIBring__image {
-	margin: 40px;
-	background-image: url("../../assets/whatshouldibring_screenshot.jpg");
-}
-
-.anatomy__image {
-	margin: 40px;
-	background-image: url("../../assets/anatomy_screenshot.jpg"); 
-}
-
-.bakery__image {
-	margin: 40px;
-	background-image: url("../../assets/bakery_screenshot.jpg");
+.innerImageContainer {
+	width: 90%;
+	padding-top: 30px;
 }
 
 .portfolioSection__projectName {
@@ -98,7 +88,7 @@ main {
 
 .portfolioSection__projectName span {
 	font-size: 2.4rem;
-	line-height: 2.6rem;
+	line-height: 2.8rem;
 	font-weight: 500;
 }
 
@@ -113,27 +103,6 @@ main {
 		white-space: nowrap;
 	}
 }
-
-// .portfolioSection__buttons {
-// 	display: flex;
-// }
-
-// .portfolioSection__buttons button {
-// 	@include portfolioButtonStyles;
-// }
-
-// .portfolioSection__buttons a {
-// 	text-decoration: none;
-// 	&:link {
-// 		color: black;
-// 	}
-// 	&:visited {
-// 		color: black;
-// 	}
-// 	&:hover {
-
-// 	}
-// }
 
 .portfolioSection__link {
 	@include portfolioLinkStyles;

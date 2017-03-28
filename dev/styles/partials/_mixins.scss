@@ -2,6 +2,7 @@
 	text-decoration: none;
 	padding: 2px 0;
 	color: black;
+	border-bottom: 2px solid white;
 	transition: border-bottom 0.2s ease-in-out;
 	&:visited {
 		color: black;
@@ -16,15 +17,40 @@
 	}
 }
 
+@mixin headerButtonStyles {
+	font-size: 0.8rem;
+	font-weight: 500;
+	letter-spacing: 1px;
+	-webkit-border: none;
+	outline: none;
+	border-radius: 50px;
+	border: 2px solid black;
+	height: 40px;
+	width: 130px;
+	background-color: black;
+	color: white;
+	text-decoration: none;
+	transition: transform 0.3s ease-in-out;
+	&:focus {
+		outline: none;
+	}
+	&:hover {
+		transform: scale(1.1);
+		transition: transform 0.3s ease-in-out;
+	}
+}
+
 @mixin portfolioLinkStyles {
 	font-size: 0.8rem;
 	font-weight: 500;
 	letter-spacing: 1px;
+	line-height: 2rem;
 	border-bottom: 2px solid rgba(239,209,198, 0.1);
 	text-decoration: none;
 	padding: 10px 0 5px 0;
-	margin-right: 10px;
+	margin: 0 10px 5px 0;
 	color: black;
+	white-space: nowrap;
 	transition: border-bottom 0.2s ease-in-out;
 	&:hover {
 		border-bottom: 2px solid black;
@@ -44,25 +70,17 @@
 	letter-spacing: 1px;
 	-webkit-border: none;
 	outline: none;
-	border-radius: 50px;
-	border: 2px solid white;
-	color: black;
-	background-color: white;
-	height: 30px;
-	width: 130px;
+	border-radius: 0;
+	// border-bottom: 2px solid white;
+	background-color: black;
+	color: white;
 	text-decoration: none;
-	// transition: transform 0.3s ease-in-out;
+	transition: border-bottom 0.2s ease-in-out;
 	&:focus {
 		outline: none;
 	}
 	&:hover {
-		// transform: scale(1.1);
-		-webkit-box-shadow: 0px 0px 4px 2px rgba(255,255,255,1);
-		-moz-box-shadow: 0px 0px 4px 2px rgba(255,255,255,1);
-		box-shadow: 0px 0px 4px 2px rgba(255,255,255,1);
-		-webkit-transition: box-shadow 0.2s ease-in-out;
-		-moz-transition: box-shadow 0.2s ease-in-out;
-		transition: box-shadow 0.2s ease-in-out;
+		transition: border-bottom 0.2s ease-in-out;
 	}
 }
 
@@ -73,30 +91,34 @@
 	letter-spacing: 0.1rem;
 }
 
-@mixin portfolioImage {
-	background-position: center;
-	background-size: contain;
-	background-repeat: no-repeat;
-}
+// @mixin portfolioImage {
+// 	width: 50%;
+// 	background-size: 90%;
+// 	background-repeat: no-repeat;
+// 	background-position: center 30px;
+// 	@include bp(lrg) {
+// 		height: 50%;
+// 	}
+// }
 
 @mixin bp($size) {
  
 	@if $size == 'lrg' {
-		@media (max-width: 960px) { 
-			@content; 
-		}
-	}
-
-	@if $size == 'med' {
 		@media (max-width: 768px) { 
 			@content; 
 		}
 	}
 
-	@if $size == 'sml' {
-		@media (max-width: 615px) { 
+	@if $size == 'med' {
+		@media (max-width: 425px) { 
 			@content; 
 		}
 	}
+
+	// @if $size == 'sml' {
+	// 	@media (max-width: 615px) { 
+	// 		@content; 
+	// 	}
+	// }
 
 }

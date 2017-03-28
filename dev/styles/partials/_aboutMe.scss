@@ -14,9 +14,12 @@
 
 .aboutMe__content {
 	display: flex;
-	// flex-direction: column;
 	flex-wrap: nowrap;
 	width: 100%;
+	@include bp(lrg) {
+		flex-direction: column;
+		align-items: center;
+	}
 }
 
 .aboutMe__image {
@@ -35,7 +38,7 @@
 	font-size: 2rem;
 	line-height: 2.4rem;
 	font-weight: 500;
-	margin: 0;
+	margin: 40px 0 0 0;
 }
 
 .aboutMe__title {
@@ -48,6 +51,10 @@
 	width: 65%;
 	margin-left: 70px;
 	@include bodyCopy;
+	@include bp(lrg) {
+		margin-left: 0;
+		width: 100%;
+	}
 }
 
 .devicons {
@@ -58,16 +65,13 @@
 	flex-wrap: nowrap;
 	@include bp(lrg) {
 		flex-direction: column;
-		// @include bp(med) {
-		// 	flex-wrap: wrap;
-		// }
 	}
 }
 
 .devicon__group--six {
 	display: flex;
 	flex-wrap: nowrap;
-	@include bp(med) {
+	@include bp(lrg) {
 		flex-direction: column;
 	}
 }
@@ -82,6 +86,9 @@
 	width: 20%;
 	font-size: 3.3rem;
 	text-align: center;
+	@include bp(med) {
+		font-size: 2.5rem;
+	}
 }
 
 .devicon__single {

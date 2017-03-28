@@ -165,6 +165,7 @@ header {
   text-decoration: none;
   padding: 2px 0;
   color: black;
+  border-bottom: 2px solid white;
   transition: border-bottom 0.2s ease-in-out; }
   .navItems__item a:visited {
     color: black; }
@@ -224,14 +225,45 @@ header {
 .lineSegment {
   width: 50px;
   border-bottom: 2px solid black;
-  margin: 20px 0; }
+  margin: 15px 0 17px 0; }
 
 .header__text--subhead {
-  font-size: 2.4rem;
+  font-size: 1.3rem;
   text-align: center;
+  line-height: 1.6rem;
   text-transform: lowercase;
-  margin: 0 0 50px 0;
+  margin: 0 0 80px 0;
   letter-spacing: 1px; }
+
+.header__button {
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  -webkit-border: none;
+  outline: none;
+  border-radius: 50px;
+  border: 2px solid black;
+  height: 40px;
+  width: 130px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  transition: transform 0.3s ease-in-out; }
+  .header__button:focus {
+    outline: none; }
+  .header__button:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out; }
+
+.header__button--link:visited {
+  color: white; }
+
+.header__button--link:hover {
+  color: white; }
+
+.header__button--link:active {
+  color: none;
+  outline: none; }
 
 main {
   display: -ms-flexbox;
@@ -249,78 +281,67 @@ main {
 .portfolio {
   margin-top: 130px; }
 
-.portfolioSection {
-  display: -ms-flexbox;
-  display: flex;
-  padding: 70px; }
-
 .portfolioSection__description {
   width: 50%;
   padding: 30px; }
+  @media (max-width: 768px) {
+    .portfolioSection__description {
+      width: 100%; } }
 
 .portfolioSection__lineSegment {
   width: 50px;
   border-bottom: 2px solid black;
   margin: 20px 0 25px 0; }
 
-.portfolioSection__imageContainer {
-  width: 50%; }
-
-.portfolioSection.ps__imageLeft {
+.ps__imageLeft {
   background-color: rgba(239, 209, 198, 0.1);
+  width: 100vw;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
-      justify-content: center; }
+      justify-content: center;
+  padding: 70px; }
 
-.ps__imageLeft .portfolioSection__imageContainer {
+.ps__imageRight {
   display: -ms-flexbox;
   display: flex;
-  padding: 70px;
-  margin-right: 50px;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat; }
+  -ms-flex-pack: center;
+      justify-content: center;
+  padding: 70px; }
+  @media (max-width: 425px) {
+    .ps__imageRight {
+      padding: 35px; } }
 
 .portfolioSection__innerWrapper {
   width: 80%;
   display: -ms-flexbox;
   display: flex; }
+  @media (max-width: 768px) {
+    .portfolioSection__innerWrapper {
+      -ms-flex-direction: column;
+          flex-direction: column; } }
 
-.portfolioSection.ps__imageRight {
+@media (max-width: 768px) {
+  .imageRight {
+    -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse; } }
+
+.imageContainer {
+  width: 50%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
       justify-content: center; }
+  @media (max-width: 768px) {
+    .imageContainer {
+      width: 100%; } }
 
-.ps__imageRight .portfolioSection__imageContainer {
-  display: -ms-flexbox;
-  display: flex;
-  padding: 70px;
-  margin-left: 30px;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat; }
+.imageContainer img {
+  width: 100%; }
 
-.askTheTarot__image {
-  margin: 40px;
-  background-image: url("../../assets/askthetarot_screenshot.jpg"); }
-
-.whereShouldISurf__image {
-  margin: 40px;
-  background-image: url("../../assets/whereshouldisurf_screenshot.jpg"); }
-
-.whatShouldIBring__image {
-  margin: 40px;
-  background-image: url("../../assets/whatshouldibring_screenshot.jpg"); }
-
-.anatomy__image {
-  margin: 40px;
-  background-image: url("../../assets/anatomy_screenshot.jpg"); }
-
-.bakery__image {
-  margin: 40px;
-  background-image: url("../../assets/bakery_screenshot.jpg"); }
+.innerImageContainer {
+  width: 90%;
+  padding-top: 30px; }
 
 .portfolioSection__projectName {
   font-size: 1.8rem;
@@ -329,7 +350,7 @@ main {
 
 .portfolioSection__projectName span {
   font-size: 2.4rem;
-  line-height: 2.6rem;
+  line-height: 2.8rem;
   font-weight: 500; }
 
 .portfolioSection__text {
@@ -349,11 +370,13 @@ main {
   font-size: 0.8rem;
   font-weight: 500;
   letter-spacing: 1px;
+  line-height: 2rem;
   border-bottom: 2px solid rgba(239, 209, 198, 0.1);
   text-decoration: none;
   padding: 10px 0 5px 0;
-  margin-right: 10px;
+  margin: 0 10px 5px 0;
   color: black;
+  white-space: nowrap;
   transition: border-bottom 0.2s ease-in-out; }
   .portfolioSection__link:hover {
     border-bottom: 2px solid black;
@@ -386,6 +409,12 @@ main {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   width: 100%; }
+  @media (max-width: 768px) {
+    .aboutMe__content {
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -ms-flex-align: center;
+          align-items: center; } }
 
 .aboutMe__image {
   width: 200px;
@@ -402,7 +431,7 @@ main {
   font-size: 2rem;
   line-height: 2.4rem;
   font-weight: 500;
-  margin: 0; }
+  margin: 40px 0 0 0; }
 
 .aboutMe__title {
   font-size: 1.2rem;
@@ -416,6 +445,10 @@ main {
   font-size: 0.8rem;
   line-height: 1.2rem;
   letter-spacing: 0.1rem; }
+  @media (max-width: 768px) {
+    .aboutMe__textContainer {
+      margin-left: 0;
+      width: 100%; } }
 
 .devicons {
   display: -ms-flexbox;
@@ -426,7 +459,7 @@ main {
   margin: 70px 0;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap; }
-  @media (max-width: 960px) {
+  @media (max-width: 768px) {
     .devicons {
       -ms-flex-direction: column;
           flex-direction: column; } }
@@ -452,6 +485,9 @@ main {
   width: 20%;
   font-size: 3.3rem;
   text-align: center; }
+  @media (max-width: 425px) {
+    .devicons i {
+      font-size: 2.5rem; } }
 
 .devicon__single {
   margin: 5px; }
@@ -477,6 +513,9 @@ form {
   -ms-flex-direction: column;
       flex-direction: column;
   width: 50%; }
+  @media (max-width: 425px) {
+    form {
+      display: none; } }
 
 label {
   font-size: 0.8rem;
@@ -486,6 +525,7 @@ input {
   background-color: black;
   border: none;
   border-bottom: 1px solid white;
+  color: white;
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   margin: 5px 0;
@@ -496,8 +536,16 @@ input {
 form button {
   background-color: white;
   color: black;
-  border: 2px solid white;
-  margin: 30px 0 100px 0; }
+  border: none;
+  border-bottom: 2px solid black;
+  margin: 30px 0 100px 0;
+  padding-left: 0;
+  width: 50px;
+  text-align: left;
+  transition: border-bottom 0.2s ease-in-out; }
+  form button:hover {
+    border-bottom: 2px solid #efd1c6;
+    transition: border-bottom 0.2s ease-in-out; }
 
 .getInTouch__columns {
   display: -ms-flexbox;
@@ -505,27 +553,37 @@ form button {
 
 .social {
   width: 50%; }
+  @media (max-width: 425px) {
+    .social {
+      width: 100%;
+      padding-bottom: 50px; } }
 
 .social__pairs {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
       align-items: center; }
+  .social__pairs:hover {
+    color: #efd1c6; }
 
 .social__pairs i {
-  font-size: 2rem;
+  font-size: 1.2rem;
   margin: 10px 0; }
 
 .social__label {
   font-size: 0.8rem;
   margin-left: 20px;
   color: white;
-  padding: 2px;
-  border-bottom: 2px solid black; }
+  padding: 5px 0;
+  border-bottom: 2px solid black;
+  transition: border-bottom 0.2s ease-in-out; }
   .social__label a {
     color: white; }
   .social__label:hover {
-    border-bottom: 2px solid #efd1c6; }
+    border-bottom: 2px solid #efd1c6;
+    transition: border-bottom 0.2s ease-in-out; }
+  .social__label:focus {
+    outline: none; }
 
 .footer__button {
   font-size: 0.8rem;
@@ -533,18 +591,15 @@ form button {
   letter-spacing: 1px;
   -webkit-border: none;
   outline: none;
-  border-radius: 50px;
-  border: 2px solid white;
-  color: black;
-  background-color: white;
-  height: 30px;
-  width: 130px;
-  text-decoration: none; }
+  border-radius: 0;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  transition: border-bottom 0.2s ease-in-out; }
   .footer__button:focus {
     outline: none; }
   .footer__button:hover {
-    box-shadow: 0px 0px 4px 2px white;
-    transition: box-shadow 0.2s ease-in-out; }
+    transition: border-bottom 0.2s ease-in-out; }
 
 .copyright {
   background-color: white;

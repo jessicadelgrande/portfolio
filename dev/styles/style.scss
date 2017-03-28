@@ -7,10 +7,6 @@
 @import 'partials/aboutMe';
 @import 'partials/footer';
 
-// * {
-// 	border: 1px solid red;
-// }
-
 body {
 	font-size: 62.5%;
 	font-family: $fontPrimary;
@@ -23,4 +19,9 @@ body {
 
 .wrapper {
 	width: 80%;
+	
 }
+
+// * {
+// 	border: 1px solid red;
+// }
