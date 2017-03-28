@@ -5,19 +5,6 @@ nav {
 	margin: 20px 0;
 }
 
-a {
-	text-decoration: none;
-}
-
-header {
-	width: 80vw;
-	height: 75vh;
-	background-image: url("../../assets/richard-tilney-bassett-182708_bg.jpg");
-	background-position: right top;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
 .navItems {
 	display: flex;
 	font-size: 0.8rem;
@@ -107,7 +94,7 @@ header {
 	color: white;
 }
 
-a .header__button--link {
+.header__button a {
 	color: white;
 }
 
