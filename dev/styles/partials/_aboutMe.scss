@@ -51,10 +51,16 @@
 	width: 65%;
 	margin-left: 70px;
 	@include bodyCopy;
+	font-size: 0.9rem;
+	line-height: 1.5rem;
 	@include bp(lrg) {
 		margin-left: 0;
 		width: 70%;
 	}
+}
+
+.aboutMe__textContainer span {
+	font-weight: 400;
 }
 
 .devicons {

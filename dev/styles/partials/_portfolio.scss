@@ -12,7 +12,7 @@ main {
 }
 
 .portfolio {
-	margin-top: 130px;
+	// margin-top: 130px;
 }
 
 .portfolioSection__description {
@@ -56,8 +56,6 @@ main {
 	}
 }
 
-// *****
-// flex this at media breakpoints!!
 .portfolioSection__innerWrapper {
 	width: 80%;
 	display: flex;
@@ -107,7 +105,7 @@ main {
 	margin-bottom: 20px;
 	@include bodyCopy;
 	span {
-		background-color: $colorPrimary;
+		background-color: rgba(239,209,198, 0.5);
 		padding: 6px;
 		margin: 4px;
 		line-height: 2rem;

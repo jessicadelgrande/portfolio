@@ -208,7 +208,8 @@ nav {
       flex-direction: column;
   -ms-flex-align: center;
       align-items: center;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  position: relative; }
 
 .header__text h1 {
   text-align: center;
@@ -271,6 +272,17 @@ nav {
     color: none;
     outline: none; }
 
+.arrowContainer {
+  outline: none; }
+  .arrowContainer:focus {
+    outline: none; }
+
+.arrowDown {
+  width: 15px;
+  margin-top: 30px;
+  position: absolute;
+  bottom: -85px; }
+
 main {
   display: -ms-flexbox;
   display: flex;
@@ -283,9 +295,6 @@ main {
   text-align: center;
   text-transform: lowercase;
   margin: 70px 0; }
-
-.portfolio {
-  margin-top: 130px; }
 
 .portfolioSection__description {
   width: 50%;
@@ -378,7 +387,7 @@ main {
   line-height: 1.2rem;
   letter-spacing: 0.1rem; }
   .portfolioSection__text span {
-    background-color: #efd1c6;
+    background-color: rgba(239, 209, 198, 0.5);
     padding: 6px;
     margin: 4px;
     line-height: 2rem;
@@ -465,11 +474,16 @@ main {
   font-family: "Montserrat", sans-serif;
   font-size: 0.8rem;
   line-height: 1.2rem;
-  letter-spacing: 0.1rem; }
+  letter-spacing: 0.1rem;
+  font-size: 0.9rem;
+  line-height: 1.5rem; }
   @media (max-width: 768px) {
     .aboutMe__textContainer {
       margin-left: 0;
       width: 70%; } }
+
+.aboutMe__textContainer span {
+  font-weight: 400; }
 
 .devicons {
   display: -ms-flexbox;
