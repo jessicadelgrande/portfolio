@@ -38,7 +38,7 @@
 	font-size: 2rem;
 	line-height: 2.4rem;
 	font-weight: 500;
-	margin: 40px 0 0 0;
+	margin: 50px 0 0 0;
 }
 
 .aboutMe__title {
@@ -53,7 +53,7 @@
 	@include bodyCopy;
 	@include bp(lrg) {
 		margin-left: 0;
-		width: 100%;
+		width: 70%;
 	}
 }
 

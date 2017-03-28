@@ -23,6 +23,9 @@ header {
 	font-size: 0.8rem;
 	color: $colorSecondary;
 	justify-content: flex-end;
+	@include bp(med) {
+		justify-content: center;
+	}
 }
 
 .navItems div {
@@ -61,6 +64,7 @@ header {
 	background-color: rgba(239,209,198, 0.5);
 	height: 75vh;
 	width: 80vw;
+	padding: 50px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -78,6 +82,9 @@ header {
 	font-size: 3.6rem;
 	font-weight: 500;
 	margin: 0;
+	@include bp(med) {
+		font-size: 3rem;
+	}
 }
 
 .lineSegment {

@@ -11,7 +11,7 @@ form {
 	display: flex;
 	flex-direction: column;
 	width: 50%;
-	@include bp(med) {
+	@include bp(mrg) {
 		display: none;
 	}
 }
@@ -53,11 +53,14 @@ form button {
 
 .getInTouch__columns {
 	display: flex;
+	@include bp(mrg) {
+		align-items: center;
+	}
 }
 
 .social {
 	width: 50%;
-	@include bp(med) {
+	@include bp(mrg) {
 		width: 100%;
 		padding-bottom: 50px;
 	}
@@ -69,11 +72,20 @@ form button {
 	&:hover {
 		color: $colorPrimary;
 	}
+	@include bp(mrg) {
+		padding: 0 70px;
+		@include bp(med) {
+			padding: 0 15px;
+		}
+	}
 }
 
 .social__pairs i {
 	font-size: 1.2rem;
 	margin: 10px 0;
+	@include bp(lrg) {
+		color: $colorPrimary;
+	}
 }
 
 .social__label {

@@ -20,6 +20,7 @@ main {
 	padding: 30px;
 	@include bp(lrg) {
 		width: 100%;
+		padding: 50px 0 0 0;
 	}
 }
 
@@ -35,12 +36,21 @@ main {
 	display: flex;
 	justify-content: center;
 	padding: 70px;
+	@include bp(lrg) {
+		padding: 90px;
+		@include bp(med) {
+			padding: 35px;
+		}
+	}
 }
 
 .ps__imageRight {
 	display: flex;
 	justify-content: center;
 	padding: 70px;
+	@include bp(lrg) {
+		padding: 90px;
+	}
 	@include bp(med) {
 		padding: 35px;
 	}
@@ -53,6 +63,7 @@ main {
 	display: flex;
 	@include bp(lrg) {
 		flex-direction: column;
+		align-items: center;
 	}
 }
 
@@ -76,7 +87,7 @@ main {
 }
 
 .innerImageContainer {
-	width: 90%;
+	width: 100%;
 	padding-top: 30px;
 }
 

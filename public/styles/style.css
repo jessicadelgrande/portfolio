@@ -154,6 +154,10 @@ header {
   color: slategray;
   -ms-flex-pack: end;
       justify-content: flex-end; }
+  @media (max-width: 425px) {
+    .navItems {
+      -ms-flex-pack: center;
+          justify-content: center; } }
 
 .navItems div {
   margin: 0 15px;
@@ -200,6 +204,7 @@ header {
   background-color: rgba(239, 209, 198, 0.5);
   height: 75vh;
   width: 80vw;
+  padding: 50px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -221,6 +226,9 @@ header {
   font-size: 3.6rem;
   font-weight: 500;
   margin: 0; }
+  @media (max-width: 425px) {
+    .header__text h1 {
+      font-size: 3rem; } }
 
 .lineSegment {
   width: 50px;
@@ -286,7 +294,8 @@ main {
   padding: 30px; }
   @media (max-width: 768px) {
     .portfolioSection__description {
-      width: 100%; } }
+      width: 100%;
+      padding: 50px 0 0 0; } }
 
 .portfolioSection__lineSegment {
   width: 50px;
@@ -301,6 +310,12 @@ main {
   -ms-flex-pack: center;
       justify-content: center;
   padding: 70px; }
+  @media (max-width: 768px) {
+    .ps__imageLeft {
+      padding: 90px; } }
+  @media (max-width: 768px) and (max-width: 425px) {
+    .ps__imageLeft {
+      padding: 35px; } }
 
 .ps__imageRight {
   display: -ms-flexbox;
@@ -308,6 +323,9 @@ main {
   -ms-flex-pack: center;
       justify-content: center;
   padding: 70px; }
+  @media (max-width: 768px) {
+    .ps__imageRight {
+      padding: 90px; } }
   @media (max-width: 425px) {
     .ps__imageRight {
       padding: 35px; } }
@@ -319,7 +337,9 @@ main {
   @media (max-width: 768px) {
     .portfolioSection__innerWrapper {
       -ms-flex-direction: column;
-          flex-direction: column; } }
+          flex-direction: column;
+      -ms-flex-align: center;
+          align-items: center; } }
 
 @media (max-width: 768px) {
   .imageRight {
@@ -340,7 +360,7 @@ main {
   width: 100%; }
 
 .innerImageContainer {
-  width: 90%;
+  width: 100%;
   padding-top: 30px; }
 
 .portfolioSection__projectName {
@@ -385,6 +405,9 @@ main {
     color: black; }
   .portfolioSection__link:focus {
     outline: none; }
+  @media (max-width: 768px) {
+    .portfolioSection__link {
+      border-bottom: 2px solid black; } }
 
 .aboutMe {
   background-color: #efd1c6;
@@ -431,7 +454,7 @@ main {
   font-size: 2rem;
   line-height: 2.4rem;
   font-weight: 500;
-  margin: 40px 0 0 0; }
+  margin: 50px 0 0 0; }
 
 .aboutMe__title {
   font-size: 1.2rem;
@@ -448,7 +471,7 @@ main {
   @media (max-width: 768px) {
     .aboutMe__textContainer {
       margin-left: 0;
-      width: 100%; } }
+      width: 70%; } }
 
 .devicons {
   display: -ms-flexbox;
@@ -513,7 +536,7 @@ form {
   -ms-flex-direction: column;
       flex-direction: column;
   width: 50%; }
-  @media (max-width: 425px) {
+  @media (max-width: 624px) {
     form {
       display: none; } }
 
@@ -550,10 +573,14 @@ form button {
 .getInTouch__columns {
   display: -ms-flexbox;
   display: flex; }
+  @media (max-width: 624px) {
+    .getInTouch__columns {
+      -ms-flex-align: center;
+          align-items: center; } }
 
 .social {
   width: 50%; }
-  @media (max-width: 425px) {
+  @media (max-width: 624px) {
     .social {
       width: 100%;
       padding-bottom: 50px; } }
@@ -565,10 +592,19 @@ form button {
       align-items: center; }
   .social__pairs:hover {
     color: #efd1c6; }
+  @media (max-width: 624px) {
+    .social__pairs {
+      padding: 0 70px; } }
+  @media (max-width: 624px) and (max-width: 425px) {
+    .social__pairs {
+      padding: 0 15px; } }
 
 .social__pairs i {
   font-size: 1.2rem;
   margin: 10px 0; }
+  @media (max-width: 768px) {
+    .social__pairs i {
+      color: #efd1c6; } }
 
 .social__label {
   font-size: 0.8rem;
