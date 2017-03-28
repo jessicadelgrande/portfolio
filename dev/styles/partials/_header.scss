@@ -106,7 +106,7 @@ header {
 	@include headerButtonStyles;
 }
 
-.header__button--link {
+.header__button--link a {
 	&:visited {
 		color: white;
 	}
