@@ -104,6 +104,7 @@ header {
 
 .header__button {
 	@include headerButtonStyles;
+	color: white;
 }
 
 .header__button--link a {
