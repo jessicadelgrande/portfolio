@@ -260,9 +260,11 @@ nav {
   .header__button:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease-in-out;
-    color: white; }
+    color: white;
+    outline: none; }
   .header__button:active {
-    color: white; }
+    color: white;
+    outline: none; }
 
 .header__button a {
   color: white; }
