@@ -24,6 +24,23 @@ main {
 	}
 }
 
+.portfolioSection__description--link {
+	color: black;
+	border-bottom: 1px solid $colorPrimary;
+	&:visited {
+		color: black;
+		border-bottom: 1px solid $colorPrimary;
+	}
+	&:hover {
+		color: black;
+		border-bottom: none;
+	}
+	&:active {
+		color: black;
+		border-bottom: 1px solid $colorPrimary;
+	}
+}
+
 .portfolioSection__lineSegment {
 	width: 50px;
 	border-bottom: 2px solid black;

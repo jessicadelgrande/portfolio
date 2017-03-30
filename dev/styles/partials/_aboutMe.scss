@@ -66,6 +66,23 @@
 	font-weight: 400;
 }
 
+.aboutMe__textContainer--link {
+	color: black;
+	border-bottom: 1px solid black;
+	&:visited {
+		color: black;
+		border-bottom: 1px solid black;
+	}
+	&:hover {
+		color: black;
+		border-bottom: none;
+	}
+	&:active {
+		color: black;
+		border-bottom: 1px solid black;
+	}
+}
+
 .devicons {
 	display: flex;
 	flex-direction: column;

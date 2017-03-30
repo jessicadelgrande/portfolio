@@ -1,0 +1,39 @@
+.navItems__rotated {
+	display: flex;
+	font-size: 0.8rem;
+	color: $colorSecondary;
+	justify-content: flex-end;
+	-webkit-transform:rotate(-180deg);
+	-moz-transform:rotate(-180deg);
+	-o-transform:rotate(-180deg);
+	transform:rotate(-180deg);
+	@include bp(med) {
+		justify-content: center;
+	}
+}
+
+.navItems__rotated div {
+	margin: 0 15px;
+	letter-spacing: 0.1rem;
+	&:last-of-type {
+		margin-right: 0;
+	}
+}
+
+.navItems__item--rotated a {
+	@include navLinkStyles;
+}
+
+.header__container--rotated {
+	margin-top: 75px;
+}
+
+.header__image--rotated {
+	width: 80vw;
+	height: 75vh;
+	background-image: url("../../assets/richard-tilney-bassett-182708_bg_rotated.jpg");
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
