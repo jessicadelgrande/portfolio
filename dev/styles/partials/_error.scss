@@ -37,3 +37,10 @@
 	background-size: cover;
 	position: relative;
 }
+
+.portfolioSection__link--break {
+	display: none;
+	@include bp(med) {
+		display: inline;
+	}
+}

@@ -187,7 +187,6 @@ nav {
   position: relative; }
 
 .overlay {
-  position: absolute;
   left: 0;
   top: 0;
   background-color: rgba(239, 209, 198, 0.5);
@@ -737,6 +736,12 @@ form button {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative; }
+
+.portfolioSection__link--break {
+  display: none; }
+  @media (max-width: 425px) {
+    .portfolioSection__link--break {
+      display: inline; } }
 
 body {
   font-size: 62.5%;
